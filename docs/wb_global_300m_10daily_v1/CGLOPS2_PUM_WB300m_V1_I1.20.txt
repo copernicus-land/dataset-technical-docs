@@ -1,0 +1,2478 @@
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Copernicus Global Land Operations
+“Cryosphere and Water”
+”CGLOPS-2”
+Framework Service Contract N° 199496 (JRC)
+
+PRODUCT USER MANUAL
+
+WATER BODIES
+PROBA-V 300M
+VERSION 1
+
+Issue I1.20
+
+Organization name of lead contractor for this deliverable:
+
+Book Captain:
+
+I. Reusen (VITO)
+
+Contributing Authors: L. Bertels (VITO)
+D. Wolfs (VITO)
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Dissemination Level
+PU
+PP
+RE
+CO
+
+Public
+Restricted to other programme participants (including the Commission Services)
+Restricted to a group specified by the consortium (including the Commission Services)
+Confidential, only for members of the consortium (including the Commission Services)
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+X
+
+© C-GLOPS Lot2 consortium
+Page:
+2 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Document Release Sheet
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+3 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Change Record
+
+Issue/Rev
+
+Document-No.
+Issue: I1.20
+
+Date
+
+Page(s)
+
+Description of Change
+
+Release
+
+06.09.2017 All
+
+First issue
+
+I1.00
+
+30.10.2017 p39
+
+Validation results added
+
+I1.10
+
+18.10.2018 All
+
+Updates after review
+
+I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+4 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+TABLE OF CONTENTS
+1
+
+Background of the document ............................................................................................. 10
+1.1
+
+Executive Summary ............................................................................................................... 10
+
+1.2
+
+Scope and Objectives............................................................................................................. 10
+
+1.3
+
+Content of the document....................................................................................................... 10
+
+1.4
+
+Related documents ............................................................................................................... 11
+
+1.4.1
+1.4.2
+
+Applicable documents ................................................................................................................................ 11
+Input............................................................................................................................................................ 11
+
+2
+
+Review of Users Requirements ........................................................................................... 12
+
+3
+
+Algorithm .......................................................................................................................... 14
+3.1
+
+Overview .............................................................................................................................. 14
+
+3.2
+
+The retrieval Methodology .................................................................................................... 15
+
+3.2.1
+3.2.2
+3.2.3
+
+3.3
+
+4
+
+Background ................................................................................................................................................. 15
+Input data.................................................................................................................................................... 15
+Processing steps .......................................................................................................................................... 18
+
+Differences with the previous version .................................................................................... 26
+
+Product Description ........................................................................................................... 28
+4.1
+
+File Naming ........................................................................................................................... 28
+
+4.2
+
+File Format ............................................................................................................................ 29
+
+4.3
+
+Product Content .................................................................................................................... 30
+
+4.3.1
+4.3.2
+
+4.4
+4.4.1
+4.4.2
+4.4.3
+4.4.4
+4.4.5
+
+Data File ...................................................................................................................................................... 30
+Quicklook .................................................................................................................................................... 36
+
+Product Characteristics .......................................................................................................... 36
+Projection and Grid Information ................................................................................................................. 36
+Spatial Information ..................................................................................................................................... 36
+Temporal Information ................................................................................................................................. 37
+Data Policies ................................................................................................................................................ 37
+Contacts ...................................................................................................................................................... 38
+
+5
+
+Validation ......................................................................................................................... 39
+
+6
+
+References ........................................................................................................................ 40
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+5 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+List of Figures
+
+Figure 1: General overview of the Water Bodies Detection Algorithm. .......................................... 14
+Figure 2. The HSV colour space. .................................................................................................. 19
+Figure 3: The Water Bodies Detection Algorithm (WDBA) decision tree. ....................................... 20
+Figure 4: 2D scatter plot of the Vietnam test area showing the final threshold levels. Land pixels
+are indicated by the dark grey dots, reference WBs (obtained from Landsat 8) are indicated by
+the colored plus symbols for different ranges of water surface ratios. A further refinement of
+the thresholds is not possible because WB pixels and land pixels are intermixed. ................. 23
+Figure 5: 2D scatter plot of the WB frequency (WBf) and the number of continuous temporal WB
+observations (mctWBs). The General Water Body Occurrence (GWBO) levels are indicated by
+the different coloured areas. .................................................................................................. 25
+Figure 6: Location in Northern South-Sudan (10°0’N, 31°80’E). a) False water bodies were
+detected because of dark soils. b) By applying the extra check on the MWEM most of the
+commission errors could be prevented................................................................................... 27
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+6 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+List of Tables
+Table 1: GCOS requirements for areas of water bodies as Lakes and Land cover Essential Climate
+Variables (GCOS-154, 2011) ................................................................................................. 13
+Table 2: Spectral characteristics of the PROBA-V bands .............................................................. 16
+Table 3: Status Map bit mapping of the PROBA-V data ................................................................ 16
+Table 4: Status Map (SM) bits and their meaning.......................................................................... 17
+Table 5: Incompatibility masking parameters ................................................................................ 21
+Table 6: Left quadratic function parameters for water body detection............................................ 22
+Table 7: Right quadratic function parameters for water body detection ......................................... 22
+Table 8: Thresholds for water body detection are applied on the HUE and VALUE, which are
+obtained after HSV color transformation of the SWIR, NIR and Red bands, on the NDVI and
+on the VALUE as an additional check besides the NDVI threshold check (NV). ..................... 26
+Table 9: Explanation in version numbering and recommendations for using efficiently the products
+.............................................................................................................................................. 28
+Table 10: Data file content of the WB300 products. ...................................................................... 30
+Table 11: WB layer legend ............................................................................................................ 30
+Table 12: QUAL legend................................................................................................................. 31
+Table 13: Description of netCDF file attributes .............................................................................. 32
+Table 14: Description of netCDF layer attributes ........................................................................... 33
+Table 15: Description of netCDF attributes for geographic coordinate variables (latitudes and
+longitudes) ............................................................................................................................. 34
+Table 16: Description of netCDF attributes for time coordinate variable ........................................ 34
+Table 17: Description of netCDF attributes for the grid mapping variable ...................................... 35
+Table 18: Colour coding for quicklook images ............................................................................... 36
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+7 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+List of Acronyms
+
+ATBD
+DEM
+ECV
+ESA
+GCOS
+GIO
+GL
+GLIMS
+GLSDEM
+GMES
+GSW
+GWBO
+GWW
+HSV
+IFOV
+LC
+MC
+MC10
+NDVI
+MWE-GSW
+MWEM
+NIR
+NMOD
+NOBS
+NSIDC
+PGM
+PROBA-V
+QUAL
+RGB
+S1-TOC
+SM
+SMAC
+SPOT
+SWIR
+SZA
+TOC
+UNFCCC
+USGS
+VITO
+Document-No.
+Issue: I1.20
+
+Algorithm Theoretical Based Document
+Digital Elevation Model
+Essential Climate Variables
+European Space Agency
+Global Climate Observing System
+GMES Initial Operations
+Global Land
+Global Land Ice Measurements from Space
+Global Land Survey Digital Elevation Model
+Global Monitoring for Environment and Security
+Global Surface Water
+General Water Bodies Occurrence
+Global Water Watch
+Hue, Saturation and Value colour system
+Instantaneous Field Of View
+Land Cover
+Mean Compositing
+10-day mean compositing synthesis
+Normalized Difference Vegetation Index
+Maximum Water Extent product of JRC’s Global Surface Water
+Maximum Water Extent Mask
+Near Infrared
+Number of valid Observations used in 10-daily compositing period
+Number of satellite overpasses within the 10-daily compositing period
+National Snow and Ice Data Centre
+Permanent Glaciers Mask
+Vegetation instrument on board of PROBA satellite
+Quality Layer
+Red, Green and Blue colour system
+The PROBA-V daily Top-Of-Canopy synthesis products
+Status Map
+Simplified Model for Atmospheric Correction
+Satellite Pour l’Observation de la Terre
+Short Wavelength Infrared
+Solar Zenith Angle
+Top of Canopy
+United Nations Framework Convention on Climate Change
+United States Geological Survey
+Vlaamse Instelling voor Technologisch Onderzoek (Flemish Institute for
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+8 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+VSM
+WB
+WBDA
+WBPM
+2D
+
+Document-No.
+Issue: I1.20
+
+Technological Research), Belgium
+Volcanic Soils Mask
+Water Body
+Water Bodies Detection Algorithm
+Water Bodies Potential Mask
+Two dimensional
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+9 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+1 BACKGROUND OF THE DOCUMENT
+1.1
+
+EXECUTIVE SUMMARY
+
+The Copernicus Land Service continuously monitors the status of land territories to generate geoinformation at both local and global scale. Its Global Land component provides several biogeophysical products describing the status of land surface on global scale and its evolution.
+Production and delivery of the parameters are to take place in a timely manner and are
+complemented by the constitution of long time series.
+This document describes the Water Bodies 300m Version 1 global products derived from the
+PROBA-V dataset. The product is calculated globally on a 10-daily basis, and made available to
+the user in near-real time every 10 days.
+The product intends to capture the dynamics of the water bodies and, hence, compared to land
+cover. Only the information water/no water is relevant and validated. The information contained in
+the quality layer (Table 12) refers to the outputs of the decision tree (Figure 3) and are not intended
+to be used as land cover classification.
+
+1.2
+
+SCOPE AND OBJECTIVES
+
+The Product User Manual (PUM) is a self-contained document which gathers all necessary
+information to use the product on an efficient and reliable way. As such, it is the primary document
+that users have to read before handling the products.
+It gives an overview of the product characteristics, in terms of algorithm, technical characteristics,
+and after validation the main validation results.
+
+1.3
+
+CONTENT OF THE DOCUMENT
+
+This document is structured as follows:
+•
+•
+•
+•
+
+Chapter 2 recalls the users requirements, and the expected performance
+Chapter 3 summarizes the retrieval methodology
+Chapter 4 describes the technical properties of the product
+Chapter 5 refers to the quality assessment
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+10 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+1.4
+
+RELATED DOCUMENTS
+
+1.4.1 Applicable documents
+AD1: Annex I – Technical Specifications JRC/IPR/2015/H.5/0026/OC to Contract Notice 2015/S
+151-277962 of 7th August 2015
+AD2: Appendix 1 – Copernicus Global land Component Product and Service Detailed Technical
+requirements to Technical Annex to Contract Notice 2015/S 151-277962 of 7th August 2015
+
+1.4.2 Input
+Document ID
+
+Descriptor
+
+CGLOPS2_SSD
+
+Service Specifications of the Global Component of
+the Copernicus Land Service.
+
+CGLOPS2_ATBD_WB300m_V1
+
+Algorithm Theoretical Basis Document of the
+version 1 300 m WB PROBA-V product
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+11 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+2 REVIEW OF USERS REQUIREMENTS
+According to the applicable document [AD2], the user’s requirements relevant for Water Bodies
+PROBA-V 300m are:
+•
+
+Definition: permanent and seasonal water bodies, natural and man-made, independently
+of their size. Include but are not restricted to the lakes of the Global terrestrial Network for
+lakes.
+
+•
+
+Geometric properties:
+o Location accuracy shall be 1/3rd of the at-nadir instantaneous field of view.
+o Pixel co-ordinates shall be given for center of pixel
+
+•
+
+Geographical coverage:
+o Geographic projection: regular latitude/longitude
+o Geodetical datum: WGS84
+o Coordinate position: center pixel
+o Pixel size: 1/336° - accuracy: min 10 digits
+o Global window coordinates:
+▪ upper left: 180°W - 75°N
+▪ bottom right: 180°E - 56°S
+
+•
+
+Ancillary information:
+o the per-pixel date of the individual measurements or the start-end dates of the
+period actually covered
+o quality indicators, with explicit per-pixel identification of the cause of anomalous
+parameter result
+
+•
+
+Accuracy requirements:
+o Baseline: wherever applicable the bio-geophysical parameters should meet the
+internationally agreed accuracy standards laid down in the document “Systematic
+Observation Requirements for Satellite-Based Products for Climate”. Additional
+details to the satellite based component of the Implementation Plan for the Global
+Observing System for Climate in Support of the UNFCCC are available in the
+document WMO (GCOS-#154, 2011) (see Table 1).
+o Target: considering data usage by that part of the user community focused on
+operational monitoring at (sub-) national scale, accuracy standards may apply not
+on averages at global scale, but at a finer geographic resolution and in any event at
+least at biome level.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+12 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+Regarding this latter accuracy requirement, the water surface biophysical variable
+corresponds to different Essential Climate Variables (ECV), i.e. the “land cover” and the
+“lakes”.
+Variable
+Areas of
+lakes
+
+Maps of
+land-cover
+type
+
+Horizontal Temporal
+Accuracy
+Stability
+resolution resolution
+Equivalent
+Monthly
+5% (maximum error of
+5% (maximum error of
+to 250m
+omission and commission
+omission and
+in lake area maps); commission in lake area
+location accuracy better maps); location accuracy
+than 1/3 of instantaneous
+better than 1/3 of
+field-of-view (IFOV) with instantaneous IFOV with
+250m target IFOV
+250m target IFOV
+250m
+1 year
+15% (maximum error of 15% (maximum error of
+omission and commission
+omission and
+in mapping individual commission in mapping
+classes); location accuracy
+individual classes);
+better than 1/3 of location accuracy better
+instantaneous field-of-view than 1/3 of instantaneous
+(IFOV) with 250m target field-of-view (IFOV) with
+IFOV
+250m target IFOV
+
+Table 1: GCOS requirements for areas of water bodies as Lakes and Land cover Essential Climate
+Variables (GCOS-154, 2011)
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+13 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+3 ALGORITHM
+3.1
+
+OVERVIEW
+
+The Global Land Water Bodies 300m Version 1 product is a 10-daily synthesis product derived
+from Top of Canopy (TOC) PROVA-V 333 m data. The product consists of 2 layers, the basic
+Water Bodies (WB) layer which tells which pixels contain water and which not, and the Quality
+Layer (QUAL) which tells something about the water body’s occurrences and as such can be used
+to retrieve additional information to the basic detection layer. As shown in Figure 1, the Water
+Bodies Detection Algorithm (WBDA) consists of four major steps.
+•
+
+•
+•
+
+•
+
+The PROBA-V daily Top-Of-Canopy synthesis products (S1-TOC) are first composited in a
+10-daily synthesis (MEAN COMPOSITE, MC10) according the method of Vancutsem et al.
+(2007). During the compositing step the MC10 Status Map is calculated.
+The SWIR, NIR and RED bands are then transformed to HUE, SATURATION and VALUE
+using a RGB to HSV transformation (COLOR TRANSFORM).
+Subsequently, the application of specific threshold values on HUE and VALUE applied per
+pixel while taking into account the MC10 Status Map, WB Potential Mask (WBPM),
+Permanent Glacier Mask (PGM), the Volcanic Soils Mask (VSM) and the Maximum Water
+Extent Mask (MWEM), allows water body detection (WB DETECTION).
+Finally an occurrence is calculated and, as such, provides additional qualitative information
+(WB OCCURRENCE).
+
+Figure 1: General overview of the Water Bodies Detection Algorithm.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+14 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+3.2
+
+THE RETRIEVAL METHODOLOGY
+
+3.2.1
+
+Background
+
+The Global Water Watch (GWW) algorithm (Pekel et al., 2005) was originally developed and
+optimized for a window extending from Senegal (17.7° West) to India (85° East) and from the
+equator to the Mediterranean sea (37.4°North) in the framework of the Global Watch project (Pekel
+et al., 2005). Later on, the methodology was improved and adapted to MODIS and validated over
+Africa (Pekel et al., 2014).
+The Copernicus Global Land WB product extended the region of interest to global coverage.
+This version increases the resolution of the global coverage, moving from a resolution of 1 km to
+300m.
+The details of the methodology are given in the ATBD [CGLOPS2_ATBD_WB300m_V1].
+3.2.2 Input data
+Six different sets of input data are used in the Water Bodies Detection Algorithm:
+•
+•
+•
+•
+•
+•
+
+PROBA-V S1-TOC 333 m data
+MC10 Status Map
+WB Potential Mask (WBPM) derived from the Global Land Survey Digital Elevation Model
+(GLSDEM)
+Permanent Glaciers Mask (PGM)
+Volcanic Soils Mask (VSM)
+Maximum Water Extent Mask (MWEM) derived from the Global Surface Water – Maximum
+Water Extent data layer
+
+3.2.2.1 The top of canopy daily synthesis reflectances (S1 TOC) and status map (MC10)
+Global PROBA-V level 3 Top Of Canopy (S1-TOC) daily synthesis products are used as input for
+the mean compositing. More details can be found on the website:
+https://earth.esa.int/web/guest/-/proba-v-1km-333m-and-100m-products
+The PROBA-V S1-TOC synthesis product ensures a daily coverage between Lat. 35° N and 75° N,
+and between 35° S and 56° S, and a full coverage every two days around the equator (between
+35°S and 35°N). The S1 Level 3 Top of Canopy (atmospheric corrections applied) daily synthesis
+product is provided at 333 m spatial resolution. Surface reflectance is available for four spectral
+bands corresponding to the selected measurement (Table 2). The atmospheric correction is
+performed using SMAC 4.0 (Rahman and Dedieu, 1994). Standard input data layers includes
+Normalized Difference Vegetation Index (NDVI), geometric viewing and illumination conditions,
+reference to date and time of observations four reflectance bands (Table 2) and a status map
+containing identification of snow, ice, shadow, clouds, land/sea for every pixel (Table 3). The data
+is stored in a szip compressed hdf5 file.
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+15 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+Spectral band
+
+Wavelength
+
+BLUE
+
+0.447 – 0.493 µm
+
+RED
+
+0.610 – 0.690 µm
+
+NIR
+
+0.770 – 0.893 µm
+
+SWIR
+
+1.570 – 1.650 µm
+
+Table 2: Spectral characteristics of the PROBA-V bands
+
+Bit
+
+Name
+
+1 -3
+
+Observation
+
+4
+
+Land/sea mask
+
+5
+
+SWIR quality flag
+
+6
+
+NIR quality flag
+
+7
+
+RED quality flag
+
+8 (Most significant)
+
+BLUE quality flag
+
+Description
+000: clear
+010: undefined
+011: cloud
+100: snow/ice
+0: sea
+1: land
+0: invalid data
+1: valid data
+0: invalid data
+1: valid data
+0: invalid data
+1: valid data
+0: invalid data
+1: valid data
+
+Table 3: Status Map bit mapping of the PROBA-V data
+
+Besides the mean compositing of the reflectance bands, a status map is constructed. It is used as
+an extra check in the WB detection algorithm to filter out invalid pixels.
+
+3.2.2.1 The Status Map of the 10-days mean composite (MC10 SM)
+In addition to the mean compositing of the reflectances for each spectral band, the number of
+observations used in mean compositing (NMOD) and the number of overpasses available (NOBS),
+the Mean Compositing step (see §3.2.3.1) also provides a status map for each pixel as shown in
+Table 4.
+The status map mimics the status map of the S1 TOC input data. It is used as an extra check in
+the WB detection algorithm to filter out invalid pixels.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+16 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+Bit
+
+Name
+
+1 -3
+
+Observation
+
+4
+
+Land/sea mask
+
+5
+
+Mean composite SWIR quality flag
+
+6
+
+Mean composite NIR quality flag
+
+7
+
+Mean composite RED quality flag
+
+8 (Most significant)
+
+Mean composite BLUE quality flag
+
+Description
+000: clear
+010: undefined
+011: cloud
+100: snow/ice
+0: sea
+1: land
+0: no mean composite
+1: valid mean composite
+0: no mean composite
+1: valid mean composite
+0: no mean composite
+1: valid mean composite
+0: no mean composite
+1: valid mean composite
+
+Table 4: Status Map (SM) bits and their meaning.
+
+3.2.2.2 The Water Bodies Potential Mask (WBPM)
+Pixels in hilly terrain having low reflectance values due to shadow or dark vegetation are often
+confused with WBs. To minimize these commission errors, a Water Bodies Potential Mask
+(WBPM) is derived from the Global Land Survey Digital Elevation Model (GLSDEM) (USGS, 2008).
+Areas with distinct topographic features such as slopes or extreme height differences cannot hold
+WBs, these areas are excluded from WB detection.
+
+3.2.2.3 The Permanent Glaciers Mask (PGM)
+To avoid commission errors due to confusion with permanent glaciers, which often have similar
+spectral properties than WBs, a Permanent Glacier Mask (PGM) was constructed. The most recent
+permanent glacier data was downloaded from the National Snow and Ice Data Centre (NSIDC,
+2014) as a shape file which was subsequently rasterized to the PROBA-V image world size in
+order to obtain the Permanent Glacier Mask (PGM). When a pixel is indicated as permanent
+glacier, it cannot be a water body
+More details about the glacier data can be found on the website:
+http://glims.colorado.edu/glacierdata/
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+17 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+3.2.2.4 The Volcanic Soils Mask (VSM)
+Locations comprised of dark volcanic soils which are spread over wider flat areas are easily
+confused with water bodies. To account for these potential commission errors, a Volcanic Soil
+Mask (VSM) was made. The geographical locations obtained from the Holocene Volcano List, setup by the Global Volcanism Program of the Smithsonian Institution, National Museum of Natural
+History (http://www.volcano.si.edu/), were used to locate volcanoes and their dark volcanic soils.
+
+3.2.2.5 The Maximum Water Extent Mask (MWEM)
+The Maximum Water Extent product of JRC’s Global Surface Water (MWE-GSW) dataset is used
+to create the Maximum Water Extent Mask (MWEM). This dataset provides information on all the
+locations ever detected as water over the last 32-year period. The GSW dataset is resampled from
+a resolution of 1/4000° to the PROBA-V 300m, 1/336° spatial resolution.
+More details about JRC’s Global Surface Water data can be found on the website:
+https://global-surface-water.appspot.com/
+
+3.2.3
+
+Processing steps
+
+As shown previously, the four main steps, depicted in orange in Figure 1, used to process the WB
+product are:
+1.
+2.
+3.
+4.
+
+Mean composite
+Colour transformation
+Water Body detection
+Water Body occurrence
+
+The following sections briefly outline these steps. More information can be found in
+[CGLOPS2_ATBD_WB300m_V1].
+
+3.2.3.1 Mean composite
+The temporal compositing (over a 10-days window) is done using the mean compositing (MC)
+method developed by Vancutsem et al. (2007). The MC10 composites (SWIR, NIR, RED, BLUE)
+are obtained from the PROBA-V or SPOT-VEGETATION S1 daily reflectance values using a 10days synthesis. The mean compositing algorithm improves the radiometric quality of the temporal
+synthesis by averaging the valid reflectances and therefore reduces the random component of the
+noise. Only valid and atmospherically corrected reflectances are included in the mean
+computation. These valid reflectances are determined using the status map delivered with the S1
+products.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+18 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+The compositing algorithm always tries to return the most optimal result. To achieve this, only the
+most optimal observations are used. Unobscured land pixels (or clear observation pixels) are
+preferred before pixels that are classified as snow or cloudy, with cloudy pixels having the lowest
+priority. For example, with a total of 7 observations with 3 cloudy and 4 clear pixels, only the latter
+4 are used in the compositing. The MC10 Status Mask reflects the most optimal observation class
+used. The classification method and content of the Status Mask layer are described in the Mean
+Composite section of [CGLOPS2_ATBD_WB300m_V1].
+
+3.2.3.2 Colour transformation
+The approach is based on a transformation of the RGB colour space into HSV that decouples
+chromaticity and luminance. The HSV (Hue, Saturation, and Value) colour space is also commonly
+used in image processing. It is a nonlinear transformation of the RGB colour space using equations
+1, 2 and 3 presented in Figure 2, with R mapped to SWIR band, G to NIR band and B to the RED
+band. The Hue (H) is defined as the dominant wavelength of the perceived colour. It is the visual
+perceptual property corresponding to the categories called yellow, blue, green, etc. Hue is
+considered as an angle between a reference line and the colour point, going from 0° to 360°. The
+Saturation (S) is defined as the degree of purity of the colour and may be intuitively considered as
+the amount of white mixed in a colour. This component represents the radial distance from the
+cone centre going from 0 to 1. The nearer the point is to the centre, the lighter is the colour. The
+Value (V), which is a brightness approximation, represents the height of the axis of the HSV cone,
+going from 0 to 1. This axis describes the grey levels.
+By analysing the distribution of the pixels in the Hue - Value space, the pixels can be classified as
+‘water’ and as ‘no water’ based on thresholds (see Pekel et al., 2014).
+
+𝑉 = 𝑚𝑎𝑥(𝑅, 𝐺, 𝐵)
+𝑆=
+
+𝑉−𝑚𝑖𝑛(𝑅,𝐺,𝐵)
+𝑉
+
+(1)
+(2)
+
+𝐺−𝐵
++ 360°) 𝑚𝑜𝑑 360° 𝑖𝑓 𝑉 = 𝑅
+𝑉−𝑚𝑖𝑛(𝑅,𝐺,𝐵)
+𝐵−𝑅
+𝐻 = 60° ∗ 𝑉−𝑚𝑖𝑛(𝑅,𝐺,𝐵) + 120° 𝑖𝑓 𝑉 = 𝐺
+(3)
+𝑅−𝐺
+{ 60° ∗ 𝑉−𝑚𝑖𝑛(𝑅,𝐺,𝐵) + 240° 𝑖𝑓 𝑉 = 𝐵
+
+(60° ∗
+
+Figure 2. The HSV colour space.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+19 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+3.2.3.3 Water Body detection
+A schematic overview of the Water Body Detection Algorithm (WBDA) is shown by the decision
+tree in Figure 3. Three major sub-steps can be defined:
+1. invalid data filtering,
+2. incompatibility masking and
+3. water body detection.
+
+Figure 3: The Water Bodies Detection Algorithm (WDBA) decision tree.
+
+3.2.3.3.1 Invalid data filtering
+Some pixels are not appropriate to be used for WB detection:
+-
+
+Pixels indicated as “undefined” in the MC10 Status Map are classified here as “No Data”.
+A low sun elevation causes elongated shadows which are observed in the remote sensing
+imagery as darkened Earth surfaces. These might be detected as water bodies when their
+VALUE drops below the threshold level. A check on the Solar Zenith Angle (SZA) prohibits
+the detection of invalid WBs, i.e. when a pixel has a SZA larger than 65° no WB detection is
+done and the pixel is classified as “No Data”.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+20 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+-
+
+-
+
+Cloud shadows on the Earth’s surface often cause the VALUE to drop below the threshold
+and are as such regularly classified as WBs. Therefore, to avoid confusion due to cloud
+shadow in the immediate neighbourhood of the initial defined cloud pixel, an additional
+dilate filtering is performed. In case a pixel is indicated as “Cloud” in the MC10 status map,
+its surrounding twelve neighbouring pixels (the circular neighbourhood with radius 2 pixels)
+are considered as “Cloud” as well and are therefore not taken into account for WB
+detection.
+Pixels indicated as “snow” in the MC10 Status Map are classified as “snow”.
+
+3.2.3.3.2 Incompatibility masking
+The WB Potential Mask (WBPM) in conjunction with the Maximum Water Extent Mask (MWEM),
+Permanent Glaciers mask (PGM) and Volcanic Soils mask (VSM) are used to filter out those pixels
+that are possible candidates for commission errors.
+In addition, vegetated surfaces, e.g. large overhanging trees or floating plants, prohibit the
+detection of WBs underneath. Besides, the dense dark vegetated surfaces especially present at
+higher latitudes often cause confusion with WBs. Therefore an NDVI mask is used to exclude
+vegetated areas from WB detection. Pixels having an NDVI value higher or equal to NDVI_TH are
+considered to be vegetation. Some WBs have a high NDVI value (due to algae load or adjacency
+effect of the surrounding vegetation) and are as such faulty classified as “Lowland Vegetation”. To
+avoid these omission errors an additional check on VALUE is added. If the VALUE of a pixel which
+is designated as “Lowland Vegetation”, is less then VALUE_TH, it is classified as “Water”. The
+values of NDVI_TH and VALUE_TH are given in Table 5.
+
+Parameter
+
+PROBA-V
+
+𝑁𝐷𝑉𝐼_𝑇𝐻
+
+0.32
+
+𝑉𝐴𝐿𝑈𝐸_𝑇𝐻
+
+0.11
+
+Table 5: Incompatibility masking parameters
+
+Rejected pixels are marked in the Quality Layer (QUAL) band in the final product.
+
+3.2.3.3.3 Water body detection
+Threshold values on the HUE and VALUE bands are used for detecting WBs worldwide. The
+defined thresholds are two quadratic functions (Figure 4). The left part (HUE = 0 till 34) can be
+written as:
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+21 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+𝑉𝑎𝑙𝑢𝑒𝐿 ≤ (34 − 𝐻𝑢𝑒𝐿 )2 ∗ 𝑆𝑐𝑎𝑙𝑒𝐿 + 𝑂𝑓𝑓𝑠𝑒𝑡𝐿
+
+(4)
+
+With:
+Parameter
+
+PROBA-V
+
+𝐻𝑢𝑒𝐿
+𝑆𝑐𝑎𝑙𝑒𝐿
+𝑂𝑓𝑓𝑠𝑒𝑡𝐿
+
+[0 … 34]
+0.0001773356
+0.14
+
+Table 6: Left quadratic function parameters for water body detection
+
+The right part (HUE = 34 till 100) is based on a rotated parabola and can be written as:
+𝑉𝑎𝑙𝑢𝑒𝑅 ≤ (𝑥 ∗ 𝑠𝑖𝑛(𝛼) + 𝑥 2 ∗ cos (𝛼)) ∗ 𝑆𝑐𝑎𝑙𝑒𝑅 + 𝑂𝑓𝑓𝑠𝑒𝑡𝑅
+
+(5)
+
+With:
+Parameter
+
+PROBA-V
+
+𝑥
+
+−(−cos(𝛼)) − √(−cos (𝛼))2 − 4 ∗ 𝑠𝑖𝑛(𝛼) ∗ 𝐻𝑢𝑒𝑅
+2 ∗ 𝑠𝑖𝑛(𝛼)
+
+𝐻𝑢𝑒𝑅
+
+[34 … 360] − 48.5
+
+𝑆𝑐𝑎𝑙𝑒𝑅
+𝑂𝑓𝑓𝑠𝑒𝑡𝑅
+𝛼
+
+0.0000052632
+0.14
+0.2°
+
+Table 7: Right quadratic function parameters for water body detection
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+22 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Figure 4: 2D scatter plot of the Vietnam test area showing the final threshold levels. Land pixels are
+indicated by the dark grey dots, reference WBs (obtained from Landsat 8) are indicated by the
+colored plus symbols for different ranges of water surface ratios. A further refinement of the
+thresholds is not possible because WB pixels and land pixels are intermixed.
+
+3.2.3.4 Water Body occurrence
+To qualify the occurrence of the detected WBs a occurrence class is calculated for each detected
+WB pixel in each dekad. This measure gives an idea about the permanent or seasonal character of
+the detected WBs. The occurrence class is added, along with the results of the invalid data and
+incompatibility steps as the Quality Layer (QUAL) band in the final product (see Table 12).
+To obtain an occurrence class for each dekad, a General Water Body Occurence (GWBO) map is
+generated using per pixel statistics which are calculated by temporal-sequential processing of the
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+23 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+last 641 cloud free observations, including the current dekad. Please note that in the Quality Layer
+(QUAL), a rejected pixel (during the invalid data filtering step or the incompatibility masking step)
+will be classified with the rejection cause and not the occurrence class. The class of the rejected
+pixel in the GWBO map remains unchanged.
+The per-pixel temporal-sequential statistics can be summarized as:
+-
+
+Total number of temporal cloud free observations (ntObs)2
+Total number of temporal WB detections (ntWBs)
+Maximum number of continuous temporal WB detections (mctWBs)
+
+From these statistics the frequency of detected WBs can be calculated as:
+
+Total number of temporal WB detections (𝑛𝑡𝑊𝐵𝑠)
+
+𝑊𝐵𝑓 = Total number of temporal cloud free observations (𝑛𝑡𝑂𝑏𝑠) ∗ 100 (%)
+
+(6)
+
+As shown in Figure 5, the calculated WB frequency (WBf) and the maximum number of continuous
+temporal WB detections (mctWBs) can be visualized in a 2D plot which in his turn is used for
+defining the occurrence threshold levels. The different occurrence levels are indicated by the
+different coloured regions in the figure. The slope and position of the four threshold lines, marked
+L, M, H and VH, define the GWBO threshold levels and are designed as such in the first phase.
+The advantage of defining the thresholds in this way is that they can be easily adapted if needed.
+The defined occurrence threshold levels can be expressed as:
+𝑉𝑒𝑟𝑦 𝐿𝑜𝑤 = (𝑚𝑐𝑡𝑊𝐵𝑠 > 0) & (𝑚𝑐𝑡𝑊𝐵𝑠 < (2 + 𝛼 𝐿 ∗ 𝑊𝐵𝑓))
+
+(7)
+
+𝐿𝑜𝑤 = (𝑚𝑐𝑡𝑊𝐵𝑠 ≥ (2 + 𝛼 𝐿 ∗ 𝑊𝐵𝑓)) & (𝑚𝑐𝑡 𝑊𝐵𝑠 < (3 + 𝛼 𝑀 ∗ 𝑊𝐵𝑓))
+
+(8)
+
+𝑀𝑒𝑑𝑖𝑢𝑚 = (𝑚𝑐𝑡𝑊𝐵𝑠 ≥ (3 + 𝛼 𝑀 ∗ 𝑊𝐵𝑓)) & (𝑚𝑐𝑡 𝑊𝐵𝑠 < (4 + 𝛼 𝐻 ∗ 𝑊𝐵𝑓))
+
+(9)
+
+𝐻𝑖𝑔ℎ = (𝑚𝑐𝑡𝑊𝐵𝑠 ≥ (4 + 𝛼 𝐻 ∗ 𝑊𝐵𝑓)) & (𝑚𝑐𝑡 𝑊𝐵𝑠 < (5 + 𝛼 𝑉𝐻 ∗ 𝑊𝐵𝑓))
+
+(10)
+
+𝑉𝑒𝑟𝑦 𝐻𝑖𝑔ℎ = 𝑚𝑐𝑡𝑊𝐵𝑠 ≥ (5 + 𝛼 𝑉𝐻 ∗ 𝑊𝐵𝑓)
+
+(11)
+
+𝑃𝑒𝑟𝑚𝑎𝑛𝑒𝑛𝑡 = 𝑊𝐵𝑓 ≥ 95
+
+(12)
+
+where αx is the slope of the threshold line x, e.g.
+5−0
+
+𝛼 𝑉𝐻 = 0−60
+
+(13)
+
+1 During startup, when less than 64 cloud free observations are available, the GWBO is calculated on all
+
+cloud free observations up to the current dekad. As a result, the WBO classes in the QUAL can appear
+unstable until enough cloud free observations are available.
+2 Note that after some time when enough dekads with cloud free observations are available, ntObs will
+become fixed to 64.
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+24 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+The plot shows that, when a certain pixel is detected as a WB in at least five consecutive dekads,
+its GWBO will be ‘Very High’ (point ‘m’ in the plot). Note that this number is independent of the
+ntObs. If, as an example, a pixel was detected as a WB in three consecutive dekads (with nObs =
+31) its WBf will be 9.7 % and therefore will have a GWBO ‘Medium’ (point ‘a’). If this pixel would
+have subsequently four additional WB detections in separate single dekads its WBf will rise to 22.6
+% and its GWBO will increase to ‘High’ (point ‘b’). The GWBO map is updated with each new
+dekad and is used to assign the WBO for the WBs detected in the actual dekad.
+Note also that if pixels have a WBf of at least 95% their GWBO will be ‘Permanent’.
+
+Figure 5: 2D scatter plot of the WB frequency (WBf) and the number of continuous temporal WB
+observations (mctWBs). The General Water Body Occurrence (GWBO) levels are indicated by the
+different coloured areas.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+25 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+3.3
+
+DIFFERENCES WITH THE PREVIOUS VERSION
+
+The water bodies detection algorithm for the PROBA-V 300m collection is related to the water
+bodies V2 detection algorithm developed for the PROBA-V 1km and SPOT/VGT collection. Two
+additional changes have been implemented.
+•
+
+The thresholds for water body detection have been changed. Table 8 gives an overview of
+the thresholds for the different collections, i.e. PROBA-V 1km, SPOT/VGT and PROBA-V
+300m.
+Thresholds
+
+PROBA-V
+1 km
+
+SPOT-VGT
+
+PROBA-V
+300 m
+
+VALUE
+HUE
+NDVI
+NV
+
+0.14
+100
+0.32
+0.11
+
+0.15
+100
+0.42
+0.13
+
+0.14
+120
+0.32
+0.11
+
+Table 8: Thresholds for water body detection are applied on the HUE and VALUE, which are obtained
+after HSV color transformation of the SWIR, NIR and Red bands, on the NDVI and on the VALUE as
+an additional check besides the NDVI threshold check (NV).
+
+•
+
+The Maximum Water Extent product of JRC’s Global Surface Water (MWE-GSW) Dataset
+provides information on all the locations ever detected as water over the last 32-year period
+(1984 - 2015), (Pekel et al., 2016). This dataset is used to derive the Maximum Water
+Extent Mask (MWEM) at PROBA-V 300m resolution. This mask is used as an extra check
+on detected water bodies to reduce commission errors, i.e. water bodies can only be
+present on those locations ever detected as water over the 32-year period. Figure 6 shows
+the WB occurrence results for an area in Norther South-Sudan. Without the MWEM (a)
+quite a lot of false detections occur due to dark soils. With the MWEM (b) the false
+detections don’t occur and commission errors will be drastically reduced. To reduce
+omission errors, the mask overrules the Water Bodies Potential Mask (WBPM). The
+WBPM, which was derived from the Global Land Survey Digital Elevation Model (GLSDEM)
+(USGS, 2008), indicates on which locations water bodies might be present. Because the
+GLSDEM was a snapshot in time it might be too strict in some cases.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+26 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Figure 6: Location in Northern South-Sudan (10°0’N, 31°80’E). a) False water bodies were detected
+because of dark soils. b) By applying the extra check on the MWEM most of the commission errors
+could be prevented.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+27 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+4 PRODUCT DESCRIPTION
+4.1
+
+FILE NAMING
+
+The Water Bodies Collection 300m Version 1 products follow the following naming standard:
+
+c_gls_WB300__<YYYYMMDDHHmm>_<AREA>_<SENSOR>_V<VERSION>
+
+where
+•
+
+<YYYYMMDDHHmm> gives the temporal location of the file. YYYY, MM, DD, HH, and mm
+denote the year, the month, the day, the hour, and the minutes, respectively. The reference
+date is the first day of the synthesis period. Note that HHmm is always 0000.
+
+•
+
+<AREA> gives the spatial coverage of the file. The Collection 300m products are by default
+only available as global coverage (GLOBE). User specific regions can be obtained through
+a custom order.
+
+•
+
+<SENSOR> provides the sensor used, hence PROBA-V
+
+•
+
+<VERSION> shows the processing line version used to generate these WB Collection 300
+m products. The version denoted as M.m.r (e.g. 1.0.1), with ‘M’ representing the major
+version (e.g. V1), ‘m’ the minor version (starting from 0) and ‘r’ the production run number
+(starting from 1) (Table 9).
+
+Versions
+
+Differences
+
+Recommendations
+
+Major
+
+Significant change to the algorithm.
+
+Do not mix various major versions in the
+same applications, unless it is otherwise
+stated.
+
+Minor
+
+Minor changes in the algorithm
+
+Can be mixed in the same applications, but
+require attention or modest modifications
+
+Run
+
+Fixes to bugs and minor issues. Later
+run automatically replaces former
+
+Consider it as a drop-in replacement
+
+Table 9: Explanation in version numbering and recommendations for using efficiently the products
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+28 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+4.2
+
+FILE FORMAT
+
+The Water Bodies Collection 300m Version 1 products are delivered as a set of files:
+•
+
+a multiband Network Common Data Form version 4 (netCDF4) with metadata attributes
+compliant with version 1.6 of the Climate & Forecast conventions (CF V1.6) containing the
+following full-resolution bands:
+o
+
+The water bodies detection layer (WB)
+
+o
+
+The quality layer (QUAL)
+
+•
+
+an xml file containing the metadata conform to INSPIRE2.1.
+
+•
+
+For a more user-friendly view of the XML contents in a browser, an XSL transformation file
+can downloaded at
+http://land.copernicus.eu/global/sites/default/files/xml/c_gls_ProductSet.xsl.
+This file should be placed in the same folder as the XML file.
+
+•
+
+A quicklook in a coloured GeoTIFF format. The quicklook is derived from the Quality Layer
+(QUAL) band.
+
+Each netCDF4 file corresponds to a global region. As due to properties of the algorithm, there is no
+processing of Water Bodies data above 75° North and below 56° South.
+When a user specific region is requested through custom ordering on the distribution portal
+website, the netCDF4 file, the two textual report files and the GeoTIFF quicklook image will only
+cover the requested region of interest.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+29 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+4.3
+
+PRODUCT CONTENT
+
+4.3.1 Data File
+An overview of the data file released in the Water Bodies Collection 300m Version 1 products
+can be seen in Table 10. Each of the products is described in the following sections.
+
+Physical
+Min
+
+Physical
+Max
+
+Digital Max
+
+Scaling
+
+Offset
+
+Water Bodies layer
+
+-
+
+-
+
+255
+
+1
+
+0
+
+Quality Layer
+
+-
+
+-
+
+255
+
+1
+
+0
+
+Layer name
+
+Description
+
+WB
+QUAL
+
+Table 10: Data file content of the WB300 products.
+
+Notes:
+•
+
+Both the WB as the QUAL layers are classified layers and as such have no physical
+minimum nor maximum
+
+The values of the digital numbers in the first layer (WB) are listed in Table 11.
+
+Value Label
+0
+70
+251
+255
+
+Sea
+Water
+No data
+No water
+
+Table 11: WB layer legend
+
+The Quality Layer represents Water Bodies Occurrence (WBO) if the base layer indicates ‘Water’
+or the source of masking if the base layer indicates ‘No water or No data’. The WBO values are
+shaded green in the table. The values of the digital numbers in the QUAL are summarized in Table
+12.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+30 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Value Label
+0
+71
+72
+73
+74
+75
+76
+151
+152
+241
+242
+243
+244
+251
+252
+253
+254
+
+Sea
+Very Low
+Low
+Medium
+High
+Very High
+Permanent
+Lowland vegetation
+Mountain vegetation
+Glacier
+Volcanic
+Mountain no vegetation
+Lowland no vegetation
+No data
+Cloud
+Snow
+SZA > 65°
+
+Table 12: QUAL legend
+
+The netCDF files contain a number of netCDF metadata attributes
+•
+•
+•
+•
+•
+
+on the file-level (Table 13);
+on the level of the netCDF variable (Table 14);
+at the level of the standard coordinate variables for the latitude (‘lat’) and longitude (‘lon’)
+dimensions, holding one value per row or column respectively (Table 15);
+at the level of standard coordinate variable for time dimension (‘time’), holding one value for
+the reference or nominal date (Table 16);
+at the level of the grid mapping (spatial reference system) variable (‘crs’) (Table 17).
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+31 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Attribute name
+Conventions
+
+Description
+
+Data
+Type
+String
+
+platform
+sensor
+
+Version of the CF-Conventions used
+A description of the contents of the
+file
+The name of the institution that
+produced the product
+The method of production of the
+original data
+A global attribute for an audit trail.
+One line, including date in ISO-8601
+format, for each invocation of a
+program that has modified the
+dataset.
+Published or web based references
+that describe the data or methods
+used to produce it.
+Specifies the name of the institution
+that archives the product
+Version of the product (VM.m.r)
+Start date and time of the total
+coverage of the data for the product.
+End date and time of the total
+coverage of the data for the product.
+Name(s) of the orbiting platform(s)
+Name(s) of the sensor(s) used
+
+identifier
+
+Unique identifier for the product
+
+String
+
+title
+institution
+source
+
+history
+
+references
+
+archive_facility
+product_version
+time_coverage_start
+time_coverage_end
+
+parent_identifier
+
+long_name
+orbit_type
+processing_level
+
+processing_mode
+
+copyright
+
+Identifier of the product collection
+(time series) for the product in
+Copernicus Global Land Service
+metadata catalogue.
+Extended product name
+Orbit type of the orbiting platform(s)
+Product processing level
+Processing mode used when
+generating the product (Near-Real
+Time, Consolidated or
+Reprocessing)
+Text to be used by users when
+referring to the data source of this
+product in publications (copyright
+notice)
+
+String
+
+Example
+CF-1.6
+10-daily Water Bodies 333M: GLOBE
+2014-01-01T00:00:00Z
+
+String
+
+VITO NV
+
+String
+
+Derived from EO satellite imagery
+
+String
+
+2017-05-18 Processing line WB300
+version 1 using PROBA-V input
+
+String
+
+http://land.copernicus.eu/global/produ
+cts/wb
+
+String
+
+VITO
+
+String
+
+V1.0.1
+
+String
+
+2014-01-01T00:00:00Z
+
+String
+
+2014-01-10T23:59:59Z
+
+String
+String
+
+Proba-V
+VEGETATION
+urn:cgls:global:wb300_v1_333m:WB
+300_201401010000_GLOBE_PBV_V
+1.0.1
+
+String
+
+urn:cgls:global:wb300_v1_333m
+
+String
+String
+String
+
+Water Bodies
+LEO
+L3
+
+String
+
+Reprocessing
+
+String
+
+Copernicus Service information 2017
+
+Table 13: Description of netCDF file attributes
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+32 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Attribute
+CLASS
+
+Description
+Dataset type
+
+Data
+Type
+
+Example for QUAL
+layer
+
+String
+
+DATA
+
+String
+
+Water Body Quality 333M
+
+A descriptive name that indicates a
+variable’s content. This name is not
+standardized. Required when a
+standard name is not available.
+Units of a the variable’s content, taken
+from Unidata’s udunits library.
+Empty or omitted for dimensionless
+variables.
+Fractions should be indicated by
+scale_factor.
+Smallest and largest values for the
+variable.
+Missing data is to be represented by
+one or several values outside of this
+range.
+Single value used to represent missing
+or undefined data and to pre-fill
+memory space in case a non-written
+part of data is read back.
+Value must be outside of valid_range.
+Single value used to represent missing
+or undefined data, for applications
+following older versions of the
+standards.
+Value must be outside of valid_range.
+
+Same as data
+variable
+
+71,76
+
+Same as data
+variable
+
+251
+
+Same as data
+variable
+
+251
+
+grid_mapping
+
+Reference to the grid mapping variable
+
+String
+
+crs
+
+flag_values
+
+Provides a list of the flag values. Used
+in conjunction with flag_meanings.
+
+Same as data
+variable
+
+flag_meanings
+
+Descriptive words or phrases for each
+flag value.
+
+String (blank
+separated list)
+
+long_name
+
+Units
+
+valid_range
+
+_FillValue
+
+missing_value
+
+String
+
+0,71,72,73,74,75,76,151,1
+52,241,242,243,244,251,2
+52,253,254
+Sea Very_low Low
+Medium High Very_high
+Permanent
+Lowland_vegetation
+Mountain_vegetation
+Glacier Volcanic
+Mountain_no_vegetation
+Lowland_no_vegetation
+No_data Cloud Snow
+SZA_greater_than_65degr
+ees
+
+Table 14: Description of netCDF layer attributes
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+33 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Attribute
+
+Data
+Type
+
+Description
+
+Example for
+longitude
+
+CLASS
+
+Dataset type
+
+String
+
+DIMENSION_SCALE
+
+DIMENSION_
+LABELS
+
+Label used in netCDF4 library
+
+String
+
+lon
+
+NAME
+
+Short name
+
+String
+
+lon
+
+String
+
+longitude
+
+String
+
+longitude
+
+String
+
+degrees_east
+
+String
+
+X
+
+String
+
+Lon
+
+standard_name
+
+long_name
+
+units
+axis
+_CoordinateAxis
+Type
+
+A standardized name that references a
+description of a variable’s content in
+CF-Convention’s standard names table.
+Note that each standard_name has
+corresponding unit (from Unidata’s
+udunits).
+A descriptive name that indicates a
+variable’s content. This name is not
+standardized. Required when a
+standard name is not available.
+Units of a the variable’s content, taken
+from Unidata’s udunits library.
+Identifies latitude, longitude, vertical, or
+time axes.
+Label used in GDAL library
+
+Table 15: Description of netCDF attributes for geographic coordinate variables (latitudes and
+longitudes)
+
+Attribute
+
+Data
+Type
+
+Description
+
+Example
+
+CLASS
+
+Dataset type
+
+String
+
+DIMENSION_SCALE
+
+NAME
+
+Short name
+
+String
+
+time
+
+String
+
+Time
+
+String
+
+Days since
+1970-01-01 00:00:00
+
+String
+
+T
+
+String
+
+standard
+
+long_name
+
+units
+axis
+
+calendar
+
+A descriptive name that indicates a
+variable’s content. This name is not
+standardized. Required when a
+standard name is not available.
+Units of a the variable’s content, taken
+from Unidata’s udunits library.
+Identifies latitude, longitude, vertical, or
+time axes.
+Specific calendar assigned to the time
+variable, taken from the Unidata’s
+udunits library.
+
+Table 16: Description of netCDF attributes for time coordinate variable
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+34 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Attribute
+
+Description
+
+Data
+Type
+
+Example
+
+String
+
+-180.0000000000
+0.0089285714
+0.0
+80.0000000000
+0.0
+-0.0089285714
+
+String, blank
+separated
+
+GeoX GeoY
+
+GeoTransform
+
+Six coefficients for the affine transformation from
+pixel/line space to coordinate space, as defined in
+GDAL’s GeoTransform
+
+_CoordinateAxisTypes
+
+Label used in GDAL library
+
+_CoordinateTransform
+Type
+
+Type of transformation
+
+String
+
+Projection
+
+grid_mapping_name
+
+Name used to identify the grid mapping
+
+String
+
+latitude_longitude
+
+inverse_flattening
+
+Used to specify the inverse flattening (1/f) of the
+ellipsoidal figure
+associated with the geodetic datum and used to
+approximate the
+shape of the Earth
+
+Float
+
+298.257223563
+
+long_name
+
+A descriptive name that indicates a variable’s content.
+
+String
+
+coordinate reference
+system
+
+longitude_of_prime_m
+eridian
+
+Specifies the longitude, with respect to Greenwich, of
+the prime meridian associated with the geodetic datum
+Specifies the length, in metres, of the semi-major axis
+of the
+ellipsoidal figure associated with the geodetic datum
+and used to
+approximate the shape of the Earth
+
+Float
+
+0.0
+
+Float
+
+6378137.0
+
+String
+
+GEOGCS["WGS
+84",DATUM["WGS_1984
+",…
+AUTHORITY["EPSG","43
+26"]]
+
+semi_major_axis
+
+spatial_ref
+
+Spatial reference system in OGC’s Well-Known Text
+(WKT) format
+
+Table 17: Description of netCDF attributes for the grid mapping variable
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+35 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+4.3.2 Quicklook
+The quicklook is a geo-referenced tiff file. The spatial resolution is sub-sampled, using nearest
+neighbour resampling, to 5% in both directions. This reduces both the dataset dimensions from
+120960 columns and 47040 rows to 6048 columns and 2352 rows.The quicklook pixel size is
+0.059523809523492° which corresponds with 6,66 km.
+The quicklook is coded in 1 byte, with values equal to the QUAL layer.
+It is a coloured image, with all water occurrences having the same colour and an embedded colour
+table as shown in Table 18.
+
+Table 18: Colour coding for quicklook images
+
+4.4
+
+PRODUCT CHARACTERISTICS
+
+4.4.1 Projection and Grid Information
+The product is displayed in a regular latitude/longitude grid (plate carrée) with the ellipsoid WGS
+1984 (Terrestrial radius=6378km). The resolution of the grid is 1/336°.
+The reference is the centre of the pixel. It means that the longitude of the upper left corner of the
+pixel is (pixel_longitude – angular_resolution/2.)
+
+4.4.2 Spatial Information
+The product is provided from longitude -180°E to +180°W and latitude +80°N to -70°S. The area
+above 75°N and below 56°S is filled with no-values (251).
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+36 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+4.4.3 Temporal Information
+The products are 10-days composites. The temporal information “YYYYMMDDHHMM” in the
+filename corresponds to the start date of the 10-daily period.
+For example, the file “c_gls_WB300_201601010000_GLOBE_PROBAV_V1.0.1.nc” corresponds to
+the synthesis period from 01/01/2016 to 10/01/2016.
+The temporal information is detailed in the metadata (xml file) by 2 fields "EX_TemporalExtent :
+beginPosition" and "EX_TemporalExtent : endPosition" as “YYYY-MM-DDTHH:MM::SS” giving the
+beginning and the end of the 10-days time period, respectively. The startPosition of the 10-daily
+time period is always set to the 01st, 11th or 21th day of the month.
+
+4.4.4 Data Policies
+EU law3 grants free access to Copernicus Sentinel Data and Service Information, including
+products from Global Land Service, for the purpose of the following use in so far as it is lawful:
+a)
+b)
+c)
+d)
+e)
+
+reproduction;
+distribution;
+communication to the public;
+adaptation, modification and combination with other data and information;
+any combination of points (a) to (d).
+
+EU law allows for specific limitations of access and use in the rare cases of security concerns,
+protection of third party rights or risk of service disruption.
+
+By using Service Information the user acknowledges that these conditions are applicable to
+him/her and that the user renounces to any claims for damages against the European Union
+and the providers of the said Information. The scope of this waiver encompasses any
+dispute, including contracts and torts claims that might be filed in court, in arbitration or in
+any other form of dispute settlement.
+
+Where the user communicates to the public on or distributes the original products, he/she is
+obliged to refer to the data source with (at least) the following statement (included as the copyright
+attribute of the netCDF file):
+
+Copernicus Service information [Year]
+(with [year] being the year of publication)
+Where the user has adapted or modified the products, the statement should be:
+
+3 European Commission, Regulation (EU) No 377/2014 and Commission Delegated Regulation (EU) No 1159/2013.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+37 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+Contains modified Copernicus Service information [Year]
+
+For complete acknowledgement and credits, the following statement can be used:
+"The product was generated by the global component of the Land Service of Copernicus,
+the Earth Observation program of the European Commission. The research leading to the
+current version of the product has received funding from various European Commission
+Research and Technical Development programs. The product is based on PROBA-V 333m
+data ((c) Belgian Science Policy and distributed by VITO NV).”
+
+The user accepts to inform the production and distribution centre of their publications through the
+following address: helpdeskticket@vgt.vito.be.
+
+4.4.5 Contacts
+The water bodies products are described and made available through the Copernicus Global Land
+Service website at:
+http://land.copernicus.eu/global
+Accountable: European Commission, Directorate-General Joint Research Centre, Italy
+Scientific & Technical Contact: Global Land Service help desk, with contact details available on
+http://land.copernicus.eu/global/contactpage
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+38 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+5 VALIDATION
+As described in the Quality Assessment Report CGLOPS2_QAR_WB300m_V1 the validation of
+the PROBA-V Collection 300m WB Version 1 products demonstrates that:
+•
+
+•
+
+•
+
+If WB pixels are considered as area fully covered with water, we assess the accuracy of the
+derived surface of inland water. In such case, the overall accuracy of the product is
+99.71%, the omission error is 26.08% and the commission error is 13.60%.
+If WB pixels are considered as detection flag (whether water was detected within the pixel
+or not), we assess the detection accuracy. In such case, for WBs that fill more than 95% of
+CGLS 330m pixels, the omission error is 1.5% (while it is 47% for WBs with size greater or
+equal to 0.1 of the pixel size). If we consider that the product should only detect WBs filling
+more than 10% of the pixel, we obtain a commission error of 3.7%.
+The omission and commission errors depend on biomes and location. Both display
+significant seasonal effects, which make the products not compliant with the requirements
+for some periods and locations.
+
+Please note that the JRC Global Surface Water, which has been used to create the MWEM layer,
+has also been used as reference layer for the validation.
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+39 of 40
+
+Copernicus Global Land Operations – Lot 2
+Date Issued: 18.10.2018
+Issue: I1.20
+
+6 REFERENCES
+GCOS-154 (2011). Systematic Observation Requirements for Satellite-based Products for Climate
+Supplemental details to the satellite-based component of the Implementation Plan for the
+Global Observing System for Climate in Support of the UNFCCC - 2011 Update, WMO,
+Geneva, Switzerland. http://www.wmo.int/pages/prog/gcos/Publications/gcos-154.pdf
+NSIDC (2014): Global Land Ice Measurements from Space (GLIMS) glacier database. Compiled
+and made available by the international GLIMS community and the National Snow and Ice
+Data
+Center,
+Boulder
+CO,
+U.S.A.
+(DOI:10.7265/N5V98602).
+http://glims.colorado.edu/glacierdata/
+Pekel, J.-F., Bogaert, P., Adans, S., Rasson, J. P., & Defourny, P. (2005). STEREO : GlobalWatch
+- Détection, Traitement automatique de séries temporelles optiques pour la cartographie et la
+et la détection de changement. Intermediary report n°2 (Vol. Intermedia).
+Pekel, J.-F., Vancutsem, C., Bastin, L., Clerici, M., Vanbogaert, E., Bartholomé, E., & Defourny, P.
+(2014). A near real-time water surface detection method based on HSV transformation of
+MODIS multi-spectral time series data. Remote Sensing of Environment, 140, 704–716.
+(doi:10.1016/j.rse.2013.10.008)
+Jean-Francois Pekel, Andrew Cottam, Noel Gorelick, Alan S. Belward, High-resolution mapping of
+global surface water and its long-term changes. Nature 540, 418-422 (2016).
+(doi:10.1038/nature20584)
+Rahman, H. and Dedieu, G., (1994). SMAC: a simplified method for the atmospheric correction of
+satellite measurements in the solar spectrum. International Journal of Remote Sensing,
+15(1): 123-143.
+USGS (2008), GLSDEM, 90m scene GLSDEM_p123r024_utmz13, Global Land Cover Facility,
+University of Maryland, College Park, Maryland. (http://glcf.umd.edu/data/glsdem/)
+Vancutsem, C., Pekel, J. ‐F., Bogaert, P., & Defourny, P. (2007). Mean Compositing, an alternative
+strategy for producing temporal syntheses. Concepts and performance assessment for
+SPOT VEGETATION time series. International Journal of Remote Sensing, 28(22), 5123–
+5141. doi:10.1080/01431160701253212
+
+Document-No.
+Issue: I1.20
+
+CGLOPS2_PUM_WB300m_V1
+Date: 18.10.2018
+
+© C-GLOPS Lot2 consortium
+Page:
+40 of 40
+
+

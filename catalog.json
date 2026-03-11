@@ -1,0 +1,2339 @@
+{
+  "title": "Copernicus Global Land Service - Product Documentation Catalog",
+  "description": "Machine-readable index of all product documentation.",
+  "generated_at": "2026-03-11T10:58:18Z",
+  "total_products": 91,
+  "document_types": {
+    "atbd": "Algorithm Theoretical Basis Document",
+    "pum": "Product User Manual",
+    "qar": "Quality Assessment Report",
+    "pmm": "Product Management Manual",
+    "pqad": "Product Quality Assurance Document",
+    "sqad": "Service Quality Assurance Document",
+    "review_report": "Review Report"
+  },
+  "special_collections": [
+    {
+      "id": "_ancillary",
+      "documents": {
+        "other": [
+          "docs/_ancillary/CGLOPS_4k_lakes_unified_meta_20191009.zip",
+          "docs/_ancillary/CGLOPS~1.PNG",
+          "docs/_ancillary/CGLOPS~2.PDF",
+          "docs/_ancillary/CGLOPS~3.PDF",
+          "docs/_ancillary/COSIMS-DT-111-MAG_WMS_usage.pdf",
+          "docs/_ancillary/CopernicusGlobalLand_RiverProductsv2.1_NameChanges.zip",
+          "docs/_ancillary/Copernicus_GlobalLand_WaterLevel_lakes.kmz",
+          "docs/_ancillary/Copernicus_GlobalLand_WaterLevel_rivers.kmz",
+          "docs/_ancillary/ESA_CCI_static_lake_mask_v2_1km_UoR_fv2.0_06Oct2021.nc",
+          "docs/_ancillary/ESA_CCI_static_lake_mask_v2_1km_UoR_metadata_fv2.0_06Oct2021.csv",
+          "docs/_ancillary/LAKE_2000_CCIv2_sel.png",
+          "docs/_ancillary/LAKE_CGLOPS.png",
+          "docs/_ancillary/LWQ100_tiles.png",
+          "docs/_ancillary/PENDING ANNEX.txt",
+          "docs/_ancillary/c_gls_LAKELIST_v1.0.1.csv",
+          "docs/_ancillary/c_gls_LAKEMASK_GLOBE_v1.0.1.nc",
+          "docs/_ancillary/helpdesk readme.docx",
+          "docs/_ancillary/report_CAF_01.zip",
+          "docs/_ancillary/report_CAF_02.zip",
+          "docs/_ancillary/report_CAF_05.zip",
+          "docs/_ancillary/report_CAF_06.zip",
+          "docs/_ancillary/report_CAF_07.zip",
+          "docs/_ancillary/report_CAF_11.zip",
+          "docs/_ancillary/report_CAF_15.zip",
+          "docs/_ancillary/report_CAF_16.zip",
+          "docs/_ancillary/report_CAF_99.zip",
+          "docs/_ancillary/report_CAR_01.zip",
+          "docs/_ancillary/report_EAF_04.zip",
+          "docs/_ancillary/report_PAC_01.zip",
+          "docs/_ancillary/report_SAF_02.zip",
+          "docs/_ancillary/report_SAF_14_15.zip",
+          "docs/_ancillary/report_SAF_21.zip",
+          "docs/_ancillary/report_WAF_04.zip",
+          "docs/_ancillary/report_WAF_05.zip",
+          "docs/_ancillary/report_WAF_10.zip",
+          "docs/_ancillary/validation_CAF_01.zip",
+          "docs/_ancillary/validation_CAF_02.zip",
+          "docs/_ancillary/validation_CAF_06.zip",
+          "docs/_ancillary/validation_CAF_07.zip",
+          "docs/_ancillary/validation_CAF_11.zip",
+          "docs/_ancillary/validation_CAF_15.zip",
+          "docs/_ancillary/validation_CAF_16.zip",
+          "docs/_ancillary/validation_CAF_99.zip",
+          "docs/_ancillary/validation_SAF_02.zip",
+          "docs/_ancillary/validation_SAF_14_15.zip",
+          "docs/_ancillary/validation_WAF_05.zip",
+          "docs/_ancillary/validation_WAF_10.zip"
+        ]
+      },
+      "file_count": 47
+    },
+    {
+      "id": "_cross-cutting",
+      "documents": {
+        "atbd": [
+          "docs/_cross-cutting/CGLOPS1_ATBD_BRDFCorrection300m-V1.6_I1.30.pdf",
+          "docs/_cross-cutting/CGLOPS1_ATBD_BRDFCorrection300m-V1_I1.10.pdf",
+          "docs/_cross-cutting/CGLOPS1_ATBD_S3-AC-V1.1_I1.50.pdf",
+          "docs/_cross-cutting/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf",
+          "docs/_cross-cutting/GIOGL1_ATBD_CloudMask_I1.10.pdf"
+        ],
+        "pqad": [
+          "docs/_cross-cutting/CGLOPS1_PQAD_I2.31.pdf"
+        ],
+        "qar": [
+          "docs/_cross-cutting/CGLOPS1_QAR_S3-AC-V1.1_I1.40.pdf",
+          "docs/_cross-cutting/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/_cross-cutting/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/_cross-cutting/CGLOPS1_QAR_S3-CloudMask_I2.00.pdf"
+        ],
+        "sqad": [
+          "docs/_cross-cutting/CGLOPS1_SQAD_I2.10_0.pdf"
+        ]
+      },
+      "file_count": 11
+    }
+  ],
+  "products": [
+    {
+      "id": "ba_global_300m_daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/ba_global_300m_daily_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/ba_global_300m_daily_v3/CGLOPS1_PUM_BA300m-V3.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/ba_global_300m_daily_v3/CGLOPS1_VR_BA300m-V3.1_I2.10.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "ba",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "daily",
+      "version": "v3",
+      "variable_full_name": "Burnt Area",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ba_global_300m_daily_v4",
+      "documents": {
+        "atbd": [
+          "docs/ba_global_300m_daily_v4/CGLOPS1_ATBD_BA300m-V4.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/ba_global_300m_daily_v4/CGLOPS1_PUM_BA300m-V4.0_I1.00.pdf"
+        ],
+        "other": [
+          "docs/ba_global_300m_daily_v4/CGLOPS1_VR_BA300m-V4.0_I1.00.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "ba",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "daily",
+      "version": "v4",
+      "variable_full_name": "Burnt Area",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ba_global_300m_monthly_v3",
+      "documents": {
+        "atbd": [
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_PUM_BA300m-V3.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_VR_BA300m-V3.1_I2.10.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "ba",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "monthly",
+      "version": "v3",
+      "variable_full_name": "Burnt Area",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ba_global_300m_monthly_v4",
+      "documents": {
+        "other": [
+          "docs/ba_global_300m_monthly_v4/.gitkeep",
+          "docs/ba_global_300m_monthly_v4/CGLOPS1_VR_BA300m-V4.0_I1.00.pdf"
+        ],
+        "atbd": [
+          "docs/ba_global_300m_monthly_v4/CGLOPS1_ATBD_BA300m-V4.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/ba_global_300m_monthly_v4/CGLOPS1_PUM_BA300m-V4.0_I1.00.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "ba",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "monthly",
+      "version": "v4",
+      "variable_full_name": "Burnt Area",
+      "category": "Vegetation"
+    },
+    {
+      "id": "dmp_global_1km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_ATBD_DMP1km-V2_I2.11.pdf"
+        ],
+        "pum": [
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_PUM_DMP1km-V2_I3.22.pdf"
+        ],
+        "qar": [
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP1km-V2_I1.11.pdf",
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+        ],
+        "other": [
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_SQE2019_DMP1km-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "dmp",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "dmp_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP-NPP300m-V1.1_I1.30.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP300m-V1_I1.12.pdf"
+        ],
+        "pmm": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_PMM_DMP300m-V1.1_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_PUM_DMP-NPP300m-V1.1_I1.30.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_PUM_DMP300m-V1_I1.22.pdf"
+        ],
+        "qar": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+        ],
+        "other": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
+        ],
+        "review_report": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS4_ReviewReport_DMP300m-V1.1_I1.00.pdf"
+        ]
+      },
+      "file_count": 8,
+      "variable": "dmp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "dmp_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/dmp_global_300m_10daily_v2/CGLOPS1_ATBD_DMP300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/dmp_global_300m_10daily_v2/CGLOPS1_PUM_DMP300m-V2.0_I1.00.pdf"
+        ],
+        "qar": [
+          "docs/dmp_global_300m_10daily_v2/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "dmp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "eta_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/eta_global_300m_10daily_v1/CGLOPS1_ATBD_ETA300m-V1_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/eta_global_300m_10daily_v1/CGLOPS1_PUM_ETA300m-V1.0_I1.10.pdf"
+        ],
+        "other": [
+          "docs/eta_global_300m_10daily_v1/CGLOPS1_VR_ETA300m-V1_I1.00.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "eta",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Evapotranspiration",
+      "category": "Evapotranspiration"
+    },
+    {
+      "id": "fapar_global_1km_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/fapar_global_1km_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "fapar",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Fraction of Absorbed Photosynthetically Active Radiation",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fapar_global_1km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/fapar_global_1km_10daily_v2/CGLOPS1_ATBD_FAPAR1km-V2_I1.41.pdf"
+        ],
+        "pum": [
+          "docs/fapar_global_1km_10daily_v2/CGLOPS1_PUM_FAPAR1km-V2_I1.33.pdf"
+        ],
+        "qar": [
+          "docs/fapar_global_1km_10daily_v2/CGLOPS1_QAR_FAPAR1km-PROBAV-V2_I1.40.pdf",
+          "docs/fapar_global_1km_10daily_v2/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf",
+          "docs/fapar_global_1km_10daily_v2/GIOGL1_QAR_FAPAR1km-VGT-V2_I2.01.pdf"
+        ],
+        "review_report": [
+          "docs/fapar_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
+        ],
+        "other": [
+          "docs/fapar_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
+        ]
+      },
+      "file_count": 7,
+      "variable": "fapar",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Fraction of Absorbed Photosynthetically Active Radiation",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fapar_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_ATBD_FAPAR300m-V1.1_I1.10.pdf"
+        ],
+        "pmm": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_PUM_FAPAR300m-V1.1_I1.20.pdf",
+          "docs/fapar_global_300m_10daily_v1/GIOGL1_PUM_FAPAR300m-V1_I1.60.pdf"
+        ],
+        "qar": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_FAPAR300m-V1.1_I1.20.pdf"
+        ],
+        "other": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_VR2024_FAPAR300m-V1.1_I1.00.pdf",
+          "docs/fapar_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
+        ],
+        "review_report": [
+          "docs/fapar_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "fapar",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Fraction of Absorbed Photosynthetically Active Radiation",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fapar_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_ATBD_FAPAR300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_PUM_FAPAR300m-V2.0_I1.00.pdf"
+        ],
+        "qar": [
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf"
+        ],
+        "other": [
+          "docs/fapar_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "fapar",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Fraction of Absorbed Photosynthetically Active Radiation",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fcover_global_1km_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/fcover_global_1km_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "fcover",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Fraction of Vegetation Cover",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fcover_global_1km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/fcover_global_1km_10daily_v2/CGLOPS1_ATBD_FCOVER1km-V2_I1.41.pdf"
+        ],
+        "pum": [
+          "docs/fcover_global_1km_10daily_v2/CGLOPS1_PUM_FCOVER1km-V2_I1.33.pdf"
+        ],
+        "qar": [
+          "docs/fcover_global_1km_10daily_v2/CGLOPS1_QAR_FCOVER1km-PROBAV-V2_I1.40.pdf",
+          "docs/fcover_global_1km_10daily_v2/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf",
+          "docs/fcover_global_1km_10daily_v2/GIOGL1_QAR_FCOVER1km-VGT-V2_I2.01.pdf"
+        ],
+        "review_report": [
+          "docs/fcover_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
+        ],
+        "other": [
+          "docs/fcover_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
+        ]
+      },
+      "file_count": 7,
+      "variable": "fcover",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Fraction of Vegetation Cover",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fcover_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_ATBD_FCOVER300m-V1.1_I1.10.pdf"
+        ],
+        "pmm": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_PUM_FCOVER300m-V1.1_I1.20.pdf",
+          "docs/fcover_global_300m_10daily_v1/GIOGL1_PUM_FCOVER300m-V1_I1.60.pdf"
+        ],
+        "qar": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_FCOVER300m-V1.1_I1.20.pdf"
+        ],
+        "other": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_VR2024_FCOVER300m-V1.1_I1.00.pdf",
+          "docs/fcover_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
+        ],
+        "review_report": [
+          "docs/fcover_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "fcover",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Fraction of Vegetation Cover",
+      "category": "Vegetation"
+    },
+    {
+      "id": "fcover_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_ATBD_FCOVER300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_PUM_FCOVER300m-V2.0_I1.00.pdf"
+        ],
+        "qar": [
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf"
+        ],
+        "other": [
+          "docs/fcover_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "fcover",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Fraction of Vegetation Cover",
+      "category": "Vegetation"
+    },
+    {
+      "id": "gdmp_global_1km_10daily_v2",
+      "documents": {
+        "other": [
+          "docs/gdmp_global_1km_10daily_v2/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "gdmp",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Gross Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "gdmp_global_300m_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/gdmp_global_300m_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "gdmp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Gross Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "gdmp_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/gdmp_global_300m_10daily_v2/CGLOPS1_ATBD_GDMP300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/gdmp_global_300m_10daily_v2/CGLOPS1_PUM_GDMP300m-V2.0_I1.00.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "gdmp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Gross Dry Matter Productivity",
+      "category": "Vegetation"
+    },
+    {
+      "id": "gpp_global_300m_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/gpp_global_300m_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "gpp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Gross Primary Production",
+      "category": "Vegetation"
+    },
+    {
+      "id": "gpp_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/gpp_global_300m_10daily_v2/CGLOPS1_ATBD_GPP300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/gpp_global_300m_10daily_v2/CGLOPS1_PUM_GPP300m-V2.0_I1.00.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "gpp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Gross Primary Production",
+      "category": "Vegetation"
+    },
+    {
+      "id": "hf_global_300m_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/hf_global_300m_daily_v1/CGLOPS1_ATBD_HF300m-V1_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/hf_global_300m_daily_v1/CGLOPS1_PUM_HF300m-V1.0_I1.10.pdf"
+        ],
+        "other": [
+          "docs/hf_global_300m_daily_v1/CGLOPS1_VR_HF300m-V1_I1.00.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "hf",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Heat Flux",
+      "category": "Evapotranspiration"
+    },
+    {
+      "id": "lai_global_1km_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/lai_global_1km_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lai",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Leaf Area Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lai_global_1km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_ATBD_LAI1km-V2_I1.41.pdf"
+        ],
+        "pum": [
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_PUM_LAI1km-V2_I1.33.pdf"
+        ],
+        "qar": [
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_QAR_LAI1km-PROBAV-V2_I1.40.pdf",
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_QAR_LAI300-V1_I2.00.pdf",
+          "docs/lai_global_1km_10daily_v2/GIOGL1_QAR_LAI1km-VGT-V2_I2.01.pdf"
+        ],
+        "other": [
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_SQE2019_LAI1km-V1&V2_I1.00.pdf",
+          "docs/lai_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
+        ],
+        "review_report": [
+          "docs/lai_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 8,
+      "variable": "lai",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Leaf Area Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lai_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_ATBD_LAI300m-V1.1_I1.10.pdf"
+        ],
+        "pmm": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_PUM_LAI300m-V1.1_I1.20.pdf",
+          "docs/lai_global_300m_10daily_v1/GIOGL1_PUM_LAI300m-V1_I1.60.pdf"
+        ],
+        "qar": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_LAI300-V1_I2.00.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_LAI300m-V1.1_I1.20.pdf"
+        ],
+        "other": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_VR2024_LAI300m-V1.1_I1.00.pdf",
+          "docs/lai_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
+        ],
+        "review_report": [
+          "docs/lai_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "lai",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Leaf Area Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lai_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_ATBD_LAI300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_PUM_LAI300m-V2.0_I1.00.pdf"
+        ],
+        "qar": [
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_QAR_LAI300-V1_I2.00.pdf"
+        ],
+        "other": [
+          "docs/lai_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "lai",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Leaf Area Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lc_global_100m_yearly_v3",
+      "documents": {
+        "atbd": [
+          "docs/lc_global_100m_yearly_v3/CGLOPS1_ATBD_LC100V3_I3.4.pdf"
+        ],
+        "pum": [
+          "docs/lc_global_100m_yearly_v3/CGLOPS1_PUM_LC100m-V3_I3.4.pdf"
+        ],
+        "other": [
+          "docs/lc_global_100m_yearly_v3/CGLOPS1_VR_LC100m-V2.0_I1.00.pdf",
+          "docs/lc_global_100m_yearly_v3/CGLOPS1_VR_LC100m-V3.0_I1.10.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "lc",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "yearly",
+      "version": "v3",
+      "variable_full_name": "Land Cover",
+      "category": "Land Cover"
+    },
+    {
+      "id": "lcfm-lcm_global_10m_yearly_v1",
+      "documents": {
+        "other": [
+          "docs/lcfm-lcm_global_10m_yearly_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lcfm-lcm",
+      "coverage": "global",
+      "resolution": "10m",
+      "frequency": "yearly",
+      "version": "v1",
+      "variable_full_name": "Land Cover Fine Map - Land Cover Map",
+      "category": "Land Cover"
+    },
+    {
+      "id": "lcfm-tcd_pantropical_10m_yearly_v1",
+      "documents": {
+        "other": [
+          "docs/lcfm-tcd_pantropical_10m_yearly_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lcfm-tcd",
+      "coverage": "pantropical",
+      "resolution": "10m",
+      "frequency": "yearly",
+      "version": "v1",
+      "variable_full_name": "Land Cover Fine Map - Tree Cover Density",
+      "category": "Land Cover"
+    },
+    {
+      "id": "lcm_global_10m_yearly_v1",
+      "documents": {
+        "pum": [
+          "docs/lcm_global_10m_yearly_v1/LCFM_PUM_LCM-10_V1_I1.1.pdf"
+        ],
+        "other": [
+          "docs/lcm_global_10m_yearly_v1/LCFM_PVR_LCM-10_V1_I1.0.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "lcm",
+      "coverage": "global",
+      "resolution": "10m",
+      "frequency": "yearly",
+      "version": "v1",
+      "variable_full_name": "Land Cover Map",
+      "category": "Land Cover"
+    },
+    {
+      "id": "lie_baltic_250m_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf",
+          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-063-MAG_ATBD_ICE_2.6.pdf",
+          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-126-MAG_ATBD_ICE_S1_1.3.pdf"
+        ],
+        "pum": [
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf",
+          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-061-MAG_PUM_ICE_3.6.pdf"
+        ],
+        "qar": [
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf",
+          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-071-MAG_QAR_ICE_V3.1.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lie",
+      "coverage": "baltic",
+      "resolution": "250m",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Lake Ice Extent",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lie_ceurope_250m_daily_v2",
+      "documents": {
+        "other": [
+          "docs/lie_ceurope_250m_daily_v2/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lie",
+      "coverage": "ceurope",
+      "resolution": "250m",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Lake Ice Extent",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lie_europe_250m_daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
+        ],
+        "pum": [
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
+        ],
+        "qar": [
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lie",
+      "coverage": "europe",
+      "resolution": "250m",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Lake Ice Extent",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lie_global_500m_daily_v2",
+      "documents": {
+        "other": [
+          "docs/lie_global_500m_daily_v2/.gitkeep"
+        ],
+        "atbd": [
+          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
+        ],
+        "pum": [
+          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
+        ],
+        "qar": [
+          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
+          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
+        ]
+      },
+      "file_count": 13,
+      "variable": "lie",
+      "coverage": "global",
+      "resolution": "500m",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Lake Ice Extent",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lie_northernhemisphere_500m_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
+        ],
+        "pum": [
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
+        ],
+        "qar": [
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
+          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lie",
+      "coverage": "northernhemisphere",
+      "resolution": "500m",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Lake Ice Extent",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lsp_global_300m_yearly_v1",
+      "documents": {
+        "atbd": [
+          "docs/lsp_global_300m_yearly_v1/CGLOPS1_ATBD_LSP300m-V1_I1.12.pdf"
+        ],
+        "pum": [
+          "docs/lsp_global_300m_yearly_v1/CGLOPS1_PUM_LSP300m-V1_I1.11.pdf"
+        ],
+        "other": [
+          "docs/lsp_global_300m_yearly_v1/CGLOPS1_VR_LSP300m_OLCI_I1.10.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "lsp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "yearly",
+      "version": "v1",
+      "variable_full_name": "Land Surface Phenology",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lsp_global_300m_yearly_v2",
+      "documents": {
+        "atbd": [
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_ATBD_LSP300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_PUM_LSP300m-V2.0_I1.00.pdf"
+        ],
+        "other": [
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_VR_LSP300m-V2.0_I1.00.pdf",
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_VR_LSP300m_OLCI_I1.10.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "lsp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "yearly",
+      "version": "v2",
+      "variable_full_name": "Land Surface Phenology",
+      "category": "Vegetation"
+    },
+    {
+      "id": "lst-daily-cycle_global_3km_10daily_v3",
+      "documents": {
+        "other": [
+          "docs/lst-daily-cycle_global_3km_10daily_v3/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lst-daily-cycle",
+      "coverage": "global",
+      "resolution": "3km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "Land Surface Temperature Daily Cycle",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst-daily-cycle_global_5km_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+        ],
+        "other": [
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+        ],
+        "qar": [
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
+        ],
+        "review_report": [
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lst-daily-cycle",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Land Surface Temperature Daily Cycle",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst-daily-cycle_global_5km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+        ],
+        "other": [
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+        ],
+        "qar": [
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
+        ],
+        "review_report": [
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lst-daily-cycle",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Land Surface Temperature Daily Cycle",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst-tci_global_3km_10daily_v3",
+      "documents": {
+        "other": [
+          "docs/lst-tci_global_3km_10daily_v3/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lst-tci",
+      "coverage": "global",
+      "resolution": "3km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "Land Surface Temperature - Temperature Condition Index",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst-tci_global_5km_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+        ],
+        "other": [
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+        ],
+        "qar": [
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
+        ],
+        "review_report": [
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lst-tci",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Land Surface Temperature - Temperature Condition Index",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst-tci_global_5km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+        ],
+        "other": [
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+        ],
+        "qar": [
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
+        ],
+        "review_report": [
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 12,
+      "variable": "lst-tci",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Land Surface Temperature - Temperature Condition Index",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst_global_3km_hourly_v3",
+      "documents": {
+        "other": [
+          "docs/lst_global_3km_hourly_v3/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lst",
+      "coverage": "global",
+      "resolution": "3km",
+      "frequency": "hourly",
+      "version": "v3",
+      "variable_full_name": "Land Surface Temperature",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst_global_5km_hourly_v1",
+      "documents": {
+        "atbd": [
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST10-V1.2_I1.60.pdf"
+        ],
+        "other": [
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v1/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST10-V1.2_I1.50.pdf"
+        ],
+        "qar": [
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf",
+          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf",
+          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST10_I1.20.pdf"
+        ],
+        "review_report": [
+          "docs/lst_global_5km_hourly_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 17,
+      "variable": "lst",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "hourly",
+      "version": "v1",
+      "variable_full_name": "Land Surface Temperature",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lst_global_5km_hourly_v2",
+      "documents": {
+        "atbd": [
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST10-V2.2_I1.91.pdf"
+        ],
+        "other": [
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v2/GIOGL1_VR_LST_I2.10.pdf"
+        ],
+        "pum": [
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST10-V2.2_I1.81.pdf"
+        ],
+        "qar": [
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST-LST10-V2.1_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf",
+          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
+          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
+          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf",
+          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST10_I1.20.pdf"
+        ],
+        "review_report": [
+          "docs/lst_global_5km_hourly_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 18,
+      "variable": "lst",
+      "coverage": "global",
+      "resolution": "5km",
+      "frequency": "hourly",
+      "version": "v2",
+      "variable_full_name": "Land Surface Temperature",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "lswt-nrt_global_1km_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lswt-nrt_global_1km_10daily_v1/CGLOPS_ATBD_LSWT_1km_v1.0.1_I1.09.pdf",
+          "docs/lswt-nrt_global_1km_10daily_v1/CGLOPS_ATBD_LSWT_1km_v1.2.0_I1.10_lowRES_LC.pdf"
+        ],
+        "pum": [
+          "docs/lswt-nrt_global_1km_10daily_v1/CGLOPS_PUM_LSWT_1km_v1.2.0_I1.10_LC.pdf"
+        ],
+        "qar": [
+          "docs/lswt-nrt_global_1km_10daily_v1/CGLOPS_QAR_LSWT_1km_v1.2.0_I1.10_lowRES_LC.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "lswt-nrt",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Surface Water Temperature (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lswt-offline_global_1km_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lswt-offline_global_1km_10daily_v1/CGLOPS_ATBD_LSWT_1km_v1.0.1_I1.09.pdf",
+          "docs/lswt-offline_global_1km_10daily_v1/CGLOPS_ATBD_LSWT_1km_v1.2.0_I1.10_lowRES_LC.pdf"
+        ],
+        "pum": [
+          "docs/lswt-offline_global_1km_10daily_v1/CGLOPS_PUM_LSWT_1km_v1.2.0_I1.10_LC.pdf"
+        ],
+        "qar": [
+          "docs/lswt-offline_global_1km_10daily_v1/CGLOPS_QAR_LSWT_1km_v1.2.0_I1.10_lowRES_LC.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "lswt-offline",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Surface Water Temperature (Offline)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_100m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+        ],
+        "qar": [
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_100m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+        ],
+        "qar": [
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_100m_10daily_v2.1",
+      "documents": {
+        "other": [
+          "docs/lwq-nrt_global_100m_10daily_v2.1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "10daily",
+      "version": "v2.1",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_1km_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/lwq-nrt_global_1km_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+        ],
+        "qar": [
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+        ],
+        "qar": [
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
+          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-nrt_global_300m_10daily_v2.1",
+      "documents": {
+        "other": [
+          "docs/lwq-nrt_global_300m_10daily_v2.1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq-nrt",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2.1",
+      "variable_full_name": "Lake Water Quality (Near Real Time)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-reproc_global_1km_10daily_v1",
+      "documents": {
+        "other": [
+          "docs/lwq-reproc_global_1km_10daily_v1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq-reproc",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Water Quality (Reprocessed)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq-reproc_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+        ],
+        "qar": [
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+        ]
+      },
+      "file_count": 16,
+      "variable": "lwq-reproc",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Lake Water Quality (Reprocessed)",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq_global_100m_10daily_v2.1",
+      "documents": {
+        "other": [
+          "docs/lwq_global_100m_10daily_v2.1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "10daily",
+      "version": "v2.1",
+      "variable_full_name": "Lake Water Quality",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "lwq_global_300m_10daily_v2.1",
+      "documents": {
+        "other": [
+          "docs/lwq_global_300m_10daily_v2.1/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "lwq",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2.1",
+      "variable_full_name": "Lake Water Quality",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "ndvi-lts_global_1km_10daily_v2",
+      "documents": {
+        "other": [
+          "docs/ndvi-lts_global_1km_10daily_v2/.gitkeep"
+        ]
+      },
+      "file_count": 1,
+      "variable": "ndvi-lts",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "NDVI Long Term Statistics",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi-lts_global_1km_10daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/ndvi-lts_global_1km_10daily_v3/CGLOPS1_ATBD_LTS-STS_NDVI1km-V3_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/ndvi-lts_global_1km_10daily_v3/CGLOPS1_PUM_LTS-STS_NDVI1km-V3_I1.30.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "ndvi-lts",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "NDVI Long Term Statistics",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi-sts_global_1km_10daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/ndvi-sts_global_1km_10daily_v3/CGLOPS1_ATBD_LTS-STS_NDVI1km-V3_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/ndvi-sts_global_1km_10daily_v3/CGLOPS1_PUM_LTS-STS_NDVI1km-V3_I1.30.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "ndvi-sts",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "NDVI Short Term Statistics",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi_global_1km_10daily_v2",
+      "documents": {
+        "qar": [
+          "docs/ndvi_global_1km_10daily_v2/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+        ]
+      },
+      "file_count": 1,
+      "variable": "ndvi",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Normalized Difference Vegetation Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi_global_1km_10daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_ATBD_NDVI1km-V3_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_PUM_NDVI1km-V3_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_QAR_NDVI1km-V3_I1.10.pdf",
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+        ],
+        "review_report": [
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS4_ReviewReport_NDVI1km-V3_I1.00.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "ndvi",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "Normalized Difference Vegetation Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi_global_300m_10daily_v1",
+      "documents": {
+        "qar": [
+          "docs/ndvi_global_300m_10daily_v1/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf",
+          "docs/ndvi_global_300m_10daily_v1/GIOGL1_QAR_NDVI300m-V1_I1.10.pdf"
+        ],
+        "other": [
+          "docs/ndvi_global_300m_10daily_v1/CGLOPS1_SQE2019_NDV300m-V1_I1.01.pdf"
+        ],
+        "atbd": [
+          "docs/ndvi_global_300m_10daily_v1/GIOGL1_ATBD_NDVI300m-V1_I1.02.pdf"
+        ],
+        "pum": [
+          "docs/ndvi_global_300m_10daily_v1/GIOGL1_PUM_NDVI300m-V1_I1.11.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "ndvi",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Normalized Difference Vegetation Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_ATBD_NDVI300m-V2_I1.20.pdf"
+        ],
+        "pmm": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_PMM_NDVI300m-V2_20230110.pdf"
+        ],
+        "pum": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_PUM_NDVI300m-V2_I1.20.pdf"
+        ],
+        "qar": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_NDVI300m-V2_I1.62.pdf",
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+        ],
+        "review_report": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS4_ReviewReport_NDVI300m-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 6,
+      "variable": "ndvi",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Normalized Difference Vegetation Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "ndvi_global_300m_10daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_ATBD_NDVI300m-V3_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_PUM_NDVI300m-V3_I1.00.pdf"
+        ],
+        "qar": [
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "ndvi",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "Normalized Difference Vegetation Index",
+      "category": "Vegetation"
+    },
+    {
+      "id": "npp_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/npp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP-NPP300m-V1.1_I1.30.pdf"
+        ],
+        "pum": [
+          "docs/npp_global_300m_10daily_v1/CGLOPS1_PUM_DMP-NPP300m-V1.1_I1.30.pdf"
+        ],
+        "other": [
+          "docs/npp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "npp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Net Primary Production",
+      "category": "Vegetation"
+    },
+    {
+      "id": "npp_global_300m_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/npp_global_300m_10daily_v2/CGLOPS1_ATBD_NPP300m-V2.0_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/npp_global_300m_10daily_v2/CGLOPS1_PUM_NPP300m-V2.0_I1.00.pdf"
+        ]
+      },
+      "file_count": 2,
+      "variable": "npp",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Net Primary Production",
+      "category": "Vegetation"
+    },
+    {
+      "id": "sce_europe_500m_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
+        ],
+        "pum": [
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf"
+        ],
+        "qar": [
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "sce",
+      "coverage": "europe",
+      "resolution": "500m",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Snow Cover Extent",
+      "category": "Snow"
+    },
+    {
+      "id": "sce_global_1km_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
+        ],
+        "pum": [
+          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf",
+          "docs/sce_global_1km_daily_v1/COSIMS-DT-060-MAG_PUM_SNOW_3.6.pdf"
+        ],
+        "qar": [
+          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
+        ]
+      },
+      "file_count": 10,
+      "variable": "sce",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Snow Cover Extent",
+      "category": "Snow"
+    },
+    {
+      "id": "sce_northernhemisphere_1km_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
+        ],
+        "pum": [
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf"
+        ],
+        "qar": [
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "sce",
+      "coverage": "northernhemisphere",
+      "resolution": "1km",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Snow Cover Extent",
+      "category": "Snow"
+    },
+    {
+      "id": "ssm_europe_1km_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_ATBD_SSM1km-V1_I1.20.pdf"
+        ],
+        "other": [
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_PMM-Summary_SSM1km-V1_I1.00.pdf",
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_VR2024_SSM1km-V1_I1.00.pdf",
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_VR_SSM1km-V1_I1.20.pdf"
+        ],
+        "pum": [
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_PUM_SSM1km-V1_I1.30.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "ssm",
+      "coverage": "europe",
+      "resolution": "1km",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Surface Soil Moisture",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swe_northernhemisphere_5km_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_ATBD_SWE-NH-5km-V1_I1.01.pdf",
+          "docs/swe_northernhemisphere_5km_daily_v1/CLMS_ATBD_SWE-NH-5km-V2.01_update_v03.pdf"
+        ],
+        "pum": [
+          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_PUM_SWE-HN-5km-V2.0.1_update_v03.pdf",
+          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_PUM_SWE-NH-5km-V1_I1.02.pdf"
+        ],
+        "qar": [
+          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_QAR_SWE-NH-5km-V1_I1.01.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swe",
+      "coverage": "northernhemisphere",
+      "resolution": "5km",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Snow Water Equivalent",
+      "category": "Snow"
+    },
+    {
+      "id": "swe_northernhemisphere_5km_daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_ATBD_SWE-NH-5km-V1_I1.01.pdf",
+          "docs/swe_northernhemisphere_5km_daily_v2/CLMS_ATBD_SWE-NH-5km-V2.01_update_v03.pdf"
+        ],
+        "pum": [
+          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_PUM_SWE-HN-5km-V2.0.1_update_v03.pdf",
+          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_PUM_SWE-NH-5km-V1_I1.02.pdf"
+        ],
+        "qar": [
+          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_QAR_SWE-NH-5km-V1_I1.01.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swe",
+      "coverage": "northernhemisphere",
+      "resolution": "5km",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Snow Water Equivalent",
+      "category": "Snow"
+    },
+    {
+      "id": "swi-static_global_12.5km_daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/swi-static_global_12.5km_daily_v3/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/swi-static_global_12.5km_daily_v3/CGLOPS1_PMM-Summary_SWI-V3_I1.00_0.pdf",
+          "docs/swi-static_global_12.5km_daily_v3/CGLOPS1_VR2024_SWI-V3_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/swi-static_global_12.5km_daily_v3/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi-static_global_12.5km_daily_v3/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swi-static",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "daily",
+      "version": "v3",
+      "variable_full_name": "Soil Water Index (Static Layers)",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi-timeseries_global_12.5km_daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/swi-timeseries_global_12.5km_daily_v3/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/swi-timeseries_global_12.5km_daily_v3/CGLOPS1_PMM-Summary_SWI-V3_I1.00_0.pdf",
+          "docs/swi-timeseries_global_12.5km_daily_v3/CGLOPS1_VR2024_SWI-V3_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/swi-timeseries_global_12.5km_daily_v3/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi-timeseries_global_12.5km_daily_v3/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swi-timeseries",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "daily",
+      "version": "v3",
+      "variable_full_name": "Soil Water Index (Time Series)",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_europe_1km_daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_ATBD_SWI1km_I1.40.pdf"
+        ],
+        "other": [
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_PMM-Summary_SWI1km-V1_I1.00.pdf",
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_VR2024_SWI1km_V1_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_PUM_SWI1km_I1.50.pdf"
+        ],
+        "qar": [
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_QAR_SWI1km-V1_I1.11.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swi",
+      "coverage": "europe",
+      "resolution": "1km",
+      "frequency": "daily",
+      "version": "v1",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_europe_1km_daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/swi_europe_1km_daily_v2/CGLOPS1_ATBD_SWI1km_I1.40.pdf"
+        ],
+        "pum": [
+          "docs/swi_europe_1km_daily_v2/CGLOPS1_PUM_SWI1km_I1.50.pdf"
+        ],
+        "other": [
+          "docs/swi_europe_1km_daily_v2/CGLOPS1_VR2024_SWI1km_V1_I1.00.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "swi",
+      "coverage": "europe",
+      "resolution": "1km",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_global_12.5km_10daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/swi_global_12.5km_10daily_v3/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/swi_global_12.5km_10daily_v3/CGLOPS1_PMM-Summary_SWI-V3_I1.00_0.pdf",
+          "docs/swi_global_12.5km_10daily_v3/CGLOPS1_VR2024_SWI-V3_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/swi_global_12.5km_10daily_v3/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi_global_12.5km_10daily_v3/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swi",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "10daily",
+      "version": "v3",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_global_12.5km_10daily_v4",
+      "documents": {
+        "atbd": [
+          "docs/swi_global_12.5km_10daily_v4/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "pum": [
+          "docs/swi_global_12.5km_10daily_v4/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi_global_12.5km_10daily_v4/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "swi",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "10daily",
+      "version": "v4",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_global_12.5km_daily_v3",
+      "documents": {
+        "atbd": [
+          "docs/swi_global_12.5km_daily_v3/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "other": [
+          "docs/swi_global_12.5km_daily_v3/CGLOPS1_PMM-Summary_SWI-V3_I1.00_0.pdf",
+          "docs/swi_global_12.5km_daily_v3/CGLOPS1_VR2024_SWI-V3_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/swi_global_12.5km_daily_v3/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi_global_12.5km_daily_v3/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 5,
+      "variable": "swi",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "daily",
+      "version": "v3",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "swi_global_12.5km_daily_v4",
+      "documents": {
+        "atbd": [
+          "docs/swi_global_12.5km_daily_v4/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
+        ],
+        "pum": [
+          "docs/swi_global_12.5km_daily_v4/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+        ],
+        "qar": [
+          "docs/swi_global_12.5km_daily_v4/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        ]
+      },
+      "file_count": 3,
+      "variable": "swi",
+      "coverage": "global",
+      "resolution": "12.5km",
+      "frequency": "daily",
+      "version": "v4",
+      "variable_full_name": "Soil Water Index",
+      "category": "Soil Moisture"
+    },
+    {
+      "id": "tcd_pantropical_10m_yearly_v1",
+      "documents": {
+        "atbd": [
+          "docs/tcd_pantropical_10m_yearly_v1/LCFM_ATBD_TCD-10_V1_I1.0.pdf"
+        ],
+        "pum": [
+          "docs/tcd_pantropical_10m_yearly_v1/LCFM_PUM_TCD-10_V1_I1.2.pdf",
+          "docs/tcd_pantropical_10m_yearly_v1/LCFM_PUM_TCD-10_V1_I1.3.pdf"
+        ],
+        "other": [
+          "docs/tcd_pantropical_10m_yearly_v1/LCFM_PVR_TCD-10_V1_I1.0.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "tcd",
+      "coverage": "pantropical",
+      "resolution": "10m",
+      "frequency": "yearly",
+      "version": "v1",
+      "variable_full_name": "Tree Cover Density",
+      "category": "Land Cover"
+    },
+    {
+      "id": "toc_global_300m_daily_v2",
+      "documents": {
+        "pum": [
+          "docs/toc_global_300m_daily_v2/CGLOPS1_PUM_S3-TOC-Reflectance300m-V2.3_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/toc_global_300m_daily_v2/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
+        "other": [
+          "docs/toc_global_300m_daily_v2/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
+          "docs/toc_global_300m_daily_v2/CGLOPS1_VR_S3-TOC-Reflectance300m-V2.3_I1.00.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "toc",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Top-of-Canopy Reflectance",
+      "category": "Temperature and Reflectance"
+    },
+    {
+      "id": "wb_global_100m_monthly_v1",
+      "documents": {
+        "atbd": [
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
+        ]
+      },
+      "file_count": 7,
+      "variable": "wb",
+      "coverage": "global",
+      "resolution": "100m",
+      "frequency": "monthly",
+      "version": "v1",
+      "variable_full_name": "Water Bodies",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "wb_global_1km_10daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/wb_global_1km_10daily_v2/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
+        ]
+      },
+      "file_count": 7,
+      "variable": "wb",
+      "coverage": "global",
+      "resolution": "1km",
+      "frequency": "10daily",
+      "version": "v2",
+      "variable_full_name": "Water Bodies",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "wb_global_300m_10daily_v1",
+      "documents": {
+        "atbd": [
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V1_I1.20.txt",
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
+        ],
+        "other": [
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_VR_WB300m-V1_I1.10.pdf"
+        ]
+      },
+      "file_count": 9,
+      "variable": "wb",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "10daily",
+      "version": "v1",
+      "variable_full_name": "Water Bodies",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "wb_global_300m_monthly_v2",
+      "documents": {
+        "atbd": [
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+        ],
+        "pum": [
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
+        ],
+        "qar": [
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_QAR_WB100m_V1_l1.00.pdf",
+          "docs/wb_global_300m_monthly_v2/CGLOPS2_QAR_WB300m-V2_I1.00.pdf"
+        ]
+      },
+      "file_count": 8,
+      "variable": "wb",
+      "coverage": "global",
+      "resolution": "300m",
+      "frequency": "monthly",
+      "version": "v2",
+      "variable_full_name": "Water Bodies",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "wl-lakes_global_vector_daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_ATBD_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
+        ],
+        "pum": [
+          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf"
+        ],
+        "qar": [
+          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_QAR_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
+        ],
+        "other": [
+          "docs/wl-lakes_global_vector_daily_v2/COSIMS-DT-230-MAG_ARLIE_usage_1.1.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "wl-lakes",
+      "coverage": "global",
+      "resolution": "vector",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Water Level - Lakes",
+      "category": "Water Bodies"
+    },
+    {
+      "id": "wl-rivers_global_vector_daily_v2",
+      "documents": {
+        "atbd": [
+          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_ATBD_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
+        ],
+        "pum": [
+          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf"
+        ],
+        "qar": [
+          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_QAR_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
+        ],
+        "other": [
+          "docs/wl-rivers_global_vector_daily_v2/COSIMS-DT-230-MAG_ARLIE_usage_1.1.pdf"
+        ]
+      },
+      "file_count": 4,
+      "variable": "wl-rivers",
+      "coverage": "global",
+      "resolution": "vector",
+      "frequency": "daily",
+      "version": "v2",
+      "variable_full_name": "Water Level - Rivers",
+      "category": "Water Bodies"
+    }
+  ]
+}

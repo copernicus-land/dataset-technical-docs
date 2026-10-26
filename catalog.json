@@ -1,7 +1,7 @@
 {
   "title": "Copernicus Global Land Service - Product Documentation Catalog",
   "description": "Machine-readable index of all product documentation.",
-  "generated_at": "2026-03-11T10:58:18Z",
+  "generated_at": "2026-10-26T17:19:06Z",
   "total_products": 91,
   "document_types": {
     "atbd": "Algorithm Theoretical Basis Document",
@@ -79,7 +79,8 @@
           "docs/_cross-cutting/GIOGL1_ATBD_CloudMask_I1.10.pdf"
         ],
         "pqad": [
-          "docs/_cross-cutting/CGLOPS1_PQAD_I2.31.pdf"
+          "docs/_cross-cutting/CGLOPS1_PQAD_I2.31.pdf",
+          "docs/_cross-cutting/CGLOPS1_PQAD_I2.40.pdf"
         ],
         "qar": [
           "docs/_cross-cutting/CGLOPS1_QAR_S3-AC-V1.1_I1.40.pdf",
@@ -88,10 +89,11 @@
           "docs/_cross-cutting/CGLOPS1_QAR_S3-CloudMask_I2.00.pdf"
         ],
         "sqad": [
-          "docs/_cross-cutting/CGLOPS1_SQAD_I2.10_0.pdf"
+          "docs/_cross-cutting/CGLOPS1_SQAD_I2.10_0.pdf",
+          "docs/_cross-cutting/CGLOPS1_SQAD_I2.20.pdf"
         ]
       },
-      "file_count": 11
+      "file_count": 13
     }
   ],
   "products": [
@@ -99,16 +101,23 @@
       "id": "ba_global_300m_daily_v3",
       "documents": {
         "atbd": [
-          "docs/ba_global_300m_daily_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf"
+          "docs/ba_global_300m_daily_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf",
+          "docs/ba_global_300m_daily_v3/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pum": [
           "docs/ba_global_300m_daily_v3/CGLOPS1_PUM_BA300m-V3.1_I1.40.pdf"
         ],
+        "qar": [
+          "docs/ba_global_300m_daily_v3/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/ba_global_300m_daily_v3/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/ba_global_300m_daily_v3/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
         "other": [
+          "docs/ba_global_300m_daily_v3/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/ba_global_300m_daily_v3/CGLOPS1_VR_BA300m-V3.1_I2.10.pdf"
         ]
       },
-      "file_count": 3,
+      "file_count": 8,
       "variable": "ba",
       "coverage": "global",
       "resolution": "300m",
@@ -127,7 +136,7 @@
           "docs/ba_global_300m_daily_v4/CGLOPS1_PUM_BA300m-V4.0_I1.00.pdf"
         ],
         "other": [
-          "docs/ba_global_300m_daily_v4/CGLOPS1_VR_BA300m-V4.0_I1.00.pdf"
+          "docs/ba_global_300m_daily_v4/CGLOPS1_VR_BA300m-V4.0_I2.00.pdf"
         ]
       },
       "file_count": 3,
@@ -143,16 +152,23 @@
       "id": "ba_global_300m_monthly_v3",
       "documents": {
         "atbd": [
-          "docs/ba_global_300m_monthly_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf"
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_ATBD_BA300m-V3.1_I2.10.pdf",
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pum": [
           "docs/ba_global_300m_monthly_v3/CGLOPS1_PUM_BA300m-V3.1_I1.40.pdf"
         ],
+        "qar": [
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
         "other": [
+          "docs/ba_global_300m_monthly_v3/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/ba_global_300m_monthly_v3/CGLOPS1_VR_BA300m-V3.1_I2.10.pdf"
         ]
       },
-      "file_count": 3,
+      "file_count": 8,
       "variable": "ba",
       "coverage": "global",
       "resolution": "300m",
@@ -166,7 +182,7 @@
       "documents": {
         "other": [
           "docs/ba_global_300m_monthly_v4/.gitkeep",
-          "docs/ba_global_300m_monthly_v4/CGLOPS1_VR_BA300m-V4.0_I1.00.pdf"
+          "docs/ba_global_300m_monthly_v4/CGLOPS1_VR_BA300m-V4.0_I2.00.pdf"
         ],
         "atbd": [
           "docs/ba_global_300m_monthly_v4/CGLOPS1_ATBD_BA300m-V4.0_I1.00.pdf"
@@ -194,14 +210,13 @@
           "docs/dmp_global_1km_10daily_v2/CGLOPS1_PUM_DMP1km-V2_I3.22.pdf"
         ],
         "qar": [
-          "docs/dmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP1km-V2_I1.11.pdf",
-          "docs/dmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+          "docs/dmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP1km-V2_I1.11.pdf"
         ],
         "other": [
           "docs/dmp_global_1km_10daily_v2/CGLOPS1_SQE2019_DMP1km-V2_I1.00.pdf"
         ]
       },
-      "file_count": 5,
+      "file_count": 4,
       "variable": "dmp",
       "coverage": "global",
       "resolution": "1km",
@@ -215,7 +230,8 @@
       "documents": {
         "atbd": [
           "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP-NPP300m-V1.1_I1.30.pdf",
-          "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP300m-V1_I1.12.pdf"
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP300m-V1_I1.12.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pmm": [
           "docs/dmp_global_300m_10daily_v1/CGLOPS1_PMM_DMP300m-V1.1_I1.10.pdf"
@@ -225,16 +241,20 @@
           "docs/dmp_global_300m_10daily_v1/CGLOPS1_PUM_DMP300m-V1_I1.22.pdf"
         ],
         "qar": [
-          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
         ],
         "other": [
+          "docs/dmp_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/dmp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
         ],
         "review_report": [
           "docs/dmp_global_300m_10daily_v1/CGLOPS4_ReviewReport_DMP300m-V1.1_I1.00.pdf"
         ]
       },
-      "file_count": 8,
+      "file_count": 13,
       "variable": "dmp",
       "coverage": "global",
       "resolution": "300m",
@@ -250,10 +270,10 @@
           "docs/dmp_global_300m_10daily_v2/CGLOPS1_ATBD_DMP300m-V2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/dmp_global_300m_10daily_v2/CGLOPS1_PUM_DMP300m-V2.0_I1.00.pdf"
+          "docs/dmp_global_300m_10daily_v2/CGLOPS1_PUM_DMP300m-V2_I1.10.pdf"
         ],
-        "qar": [
-          "docs/dmp_global_300m_10daily_v2/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf"
+        "other": [
+          "docs/dmp_global_300m_10daily_v2/CGLOPS1_VR_DMP-NPP300m-V2_I1.10.pdf"
         ]
       },
       "file_count": 3,
@@ -314,17 +334,16 @@
         ],
         "qar": [
           "docs/fapar_global_1km_10daily_v2/CGLOPS1_QAR_FAPAR1km-PROBAV-V2_I1.40.pdf",
-          "docs/fapar_global_1km_10daily_v2/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf",
           "docs/fapar_global_1km_10daily_v2/GIOGL1_QAR_FAPAR1km-VGT-V2_I2.01.pdf"
+        ],
+        "other": [
+          "docs/fapar_global_1km_10daily_v2/CGLOPS1_SQE2019_LAI1km-V1&V2_I1.00.pdf"
         ],
         "review_report": [
           "docs/fapar_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
-        ],
-        "other": [
-          "docs/fapar_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
         ]
       },
-      "file_count": 7,
+      "file_count": 6,
       "variable": "fapar",
       "coverage": "global",
       "resolution": "1km",
@@ -337,7 +356,8 @@
       "id": "fapar_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/fapar_global_300m_10daily_v1/CGLOPS1_ATBD_FAPAR300m-V1.1_I1.10.pdf"
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_ATBD_FAPAR300m-V1.1_I1.10.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pmm": [
           "docs/fapar_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
@@ -348,17 +368,21 @@
         ],
         "qar": [
           "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf",
-          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_FAPAR300m-V1.1_I1.20.pdf"
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_FAPAR300m-V1.1_I1.20.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
         ],
         "other": [
           "docs/fapar_global_300m_10daily_v1/CGLOPS1_VR2024_FAPAR300m-V1.1_I1.00.pdf",
+          "docs/fapar_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/fapar_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
         ],
         "review_report": [
           "docs/fapar_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 14,
       "variable": "fapar",
       "coverage": "global",
       "resolution": "300m",
@@ -371,19 +395,16 @@
       "id": "fapar_global_300m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/fapar_global_300m_10daily_v2/CGLOPS1_ATBD_FAPAR300m-V2.0_I1.00.pdf"
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_ATBD_FAPAR300m-V2.0_I1.10.pdf"
         ],
         "pum": [
-          "docs/fapar_global_300m_10daily_v2/CGLOPS1_PUM_FAPAR300m-V2.0_I1.00.pdf"
-        ],
-        "qar": [
-          "docs/fapar_global_300m_10daily_v2/CGLOPS1_QAR_FAPAR300-V1_I2.00.pdf"
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_PUM_FAPAR300m-V2.0_I1.20.pdf"
         ],
         "other": [
-          "docs/fapar_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-FAPAR300m_I1.73.pdf"
+          "docs/fapar_global_300m_10daily_v2/CGLOPS1_VR_FAPAR300m-V2.0_I1.10.pdf"
         ]
       },
-      "file_count": 4,
+      "file_count": 3,
       "variable": "fapar",
       "coverage": "global",
       "resolution": "300m",
@@ -419,17 +440,16 @@
         ],
         "qar": [
           "docs/fcover_global_1km_10daily_v2/CGLOPS1_QAR_FCOVER1km-PROBAV-V2_I1.40.pdf",
-          "docs/fcover_global_1km_10daily_v2/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf",
           "docs/fcover_global_1km_10daily_v2/GIOGL1_QAR_FCOVER1km-VGT-V2_I2.01.pdf"
+        ],
+        "other": [
+          "docs/fcover_global_1km_10daily_v2/CGLOPS1_SQE2019_LAI1km-V1&V2_I1.00.pdf"
         ],
         "review_report": [
           "docs/fcover_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
-        ],
-        "other": [
-          "docs/fcover_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
         ]
       },
-      "file_count": 7,
+      "file_count": 6,
       "variable": "fcover",
       "coverage": "global",
       "resolution": "1km",
@@ -442,7 +462,8 @@
       "id": "fcover_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/fcover_global_300m_10daily_v1/CGLOPS1_ATBD_FCOVER300m-V1.1_I1.10.pdf"
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_ATBD_FCOVER300m-V1.1_I1.10.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pmm": [
           "docs/fcover_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
@@ -453,17 +474,21 @@
         ],
         "qar": [
           "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf",
-          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_FCOVER300m-V1.1_I1.20.pdf"
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_FCOVER300m-V1.1_I1.20.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
         ],
         "other": [
           "docs/fcover_global_300m_10daily_v1/CGLOPS1_VR2024_FCOVER300m-V1.1_I1.00.pdf",
+          "docs/fcover_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/fcover_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
         ],
         "review_report": [
           "docs/fcover_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 14,
       "variable": "fcover",
       "coverage": "global",
       "resolution": "300m",
@@ -476,19 +501,16 @@
       "id": "fcover_global_300m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/fcover_global_300m_10daily_v2/CGLOPS1_ATBD_FCOVER300m-V2.0_I1.00.pdf"
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_ATBD_FCOVER300m-V2.0_I1.10.pdf"
         ],
         "pum": [
-          "docs/fcover_global_300m_10daily_v2/CGLOPS1_PUM_FCOVER300m-V2.0_I1.00.pdf"
-        ],
-        "qar": [
-          "docs/fcover_global_300m_10daily_v2/CGLOPS1_QAR_FCOVER300-V1_I2.00.pdf"
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_PUM_FCOVER300m-V2.0_I1.20.pdf"
         ],
         "other": [
-          "docs/fcover_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-FCOVER300m_I1.73.pdf"
+          "docs/fcover_global_300m_10daily_v2/CGLOPS1_VR_FCOVER300m-V2.0_I1.10.pdf"
         ]
       },
-      "file_count": 4,
+      "file_count": 3,
       "variable": "fcover",
       "coverage": "global",
       "resolution": "300m",
@@ -501,10 +523,20 @@
       "id": "gdmp_global_1km_10daily_v2",
       "documents": {
         "other": [
-          "docs/gdmp_global_1km_10daily_v2/.gitkeep"
+          "docs/gdmp_global_1km_10daily_v2/.gitkeep",
+          "docs/gdmp_global_1km_10daily_v2/CGLOPS1_SQE2019_DMP1km-V2_I1.00.pdf"
+        ],
+        "atbd": [
+          "docs/gdmp_global_1km_10daily_v2/CGLOPS1_ATBD_DMP1km-V2_I2.11.pdf"
+        ],
+        "pum": [
+          "docs/gdmp_global_1km_10daily_v2/CGLOPS1_PUM_DMP1km-V2_I3.22.pdf"
+        ],
+        "qar": [
+          "docs/gdmp_global_1km_10daily_v2/CGLOPS1_QAR_DMP1km-V2_I1.11.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 5,
       "variable": "gdmp",
       "coverage": "global",
       "resolution": "1km",
@@ -517,10 +549,33 @@
       "id": "gdmp_global_300m_10daily_v1",
       "documents": {
         "other": [
-          "docs/gdmp_global_300m_10daily_v1/.gitkeep"
+          "docs/gdmp_global_300m_10daily_v1/.gitkeep",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
+        ],
+        "atbd": [
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP-NPP300m-V1.1_I1.30.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP300m-V1_I1.12.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
+        ],
+        "pmm": [
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_PMM_DMP300m-V1.1_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_PUM_DMP-NPP300m-V1.1_I1.30.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_PUM_DMP300m-V1_I1.22.pdf"
+        ],
+        "qar": [
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_QAR_DMP300m_V1_I1.13.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
+        "review_report": [
+          "docs/gdmp_global_300m_10daily_v1/CGLOPS4_ReviewReport_DMP300m-V1.1_I1.00.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 14,
       "variable": "gdmp",
       "coverage": "global",
       "resolution": "300m",
@@ -536,10 +591,13 @@
           "docs/gdmp_global_300m_10daily_v2/CGLOPS1_ATBD_GDMP300m-V2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/gdmp_global_300m_10daily_v2/CGLOPS1_PUM_GDMP300m-V2.0_I1.00.pdf"
+          "docs/gdmp_global_300m_10daily_v2/CGLOPS1_PUM_GDMP300m-V2_I1.10.pdf"
+        ],
+        "other": [
+          "docs/gdmp_global_300m_10daily_v2/CGLOPS1_VR_DMP-NPP300m-V2_I1.10.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 3,
       "variable": "gdmp",
       "coverage": "global",
       "resolution": "300m",
@@ -552,10 +610,21 @@
       "id": "gpp_global_300m_10daily_v1",
       "documents": {
         "other": [
-          "docs/gpp_global_300m_10daily_v1/.gitkeep"
+          "docs/gpp_global_300m_10daily_v1/.gitkeep",
+          "docs/gpp_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
+          "docs/gpp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
+        ],
+        "atbd": [
+          "docs/gpp_global_300m_10daily_v1/CGLOPS1_ATBD_DMP-NPP300m-V1.1_I1.30.pdf"
+        ],
+        "pum": [
+          "docs/gpp_global_300m_10daily_v1/CGLOPS1_PUM_DMP-NPP300m-V1.1_I1.30.pdf"
+        ],
+        "qar": [
+          "docs/gpp_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 6,
       "variable": "gpp",
       "coverage": "global",
       "resolution": "300m",
@@ -571,10 +640,13 @@
           "docs/gpp_global_300m_10daily_v2/CGLOPS1_ATBD_GPP300m-V2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/gpp_global_300m_10daily_v2/CGLOPS1_PUM_GPP300m-V2.0_I1.00.pdf"
+          "docs/gpp_global_300m_10daily_v2/CGLOPS1_PUM_GPP300m-V2_I1.10.pdf"
+        ],
+        "other": [
+          "docs/gpp_global_300m_10daily_v2/CGLOPS1_VR_DMP-NPP300m-V2_I1.10.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 3,
       "variable": "gpp",
       "coverage": "global",
       "resolution": "300m",
@@ -632,18 +704,16 @@
         ],
         "qar": [
           "docs/lai_global_1km_10daily_v2/CGLOPS1_QAR_LAI1km-PROBAV-V2_I1.40.pdf",
-          "docs/lai_global_1km_10daily_v2/CGLOPS1_QAR_LAI300-V1_I2.00.pdf",
           "docs/lai_global_1km_10daily_v2/GIOGL1_QAR_LAI1km-VGT-V2_I2.01.pdf"
         ],
         "other": [
-          "docs/lai_global_1km_10daily_v2/CGLOPS1_SQE2019_LAI1km-V1&V2_I1.00.pdf",
-          "docs/lai_global_1km_10daily_v2/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
+          "docs/lai_global_1km_10daily_v2/CGLOPS1_SQE2019_LAI1km-V1&V2_I1.00.pdf"
         ],
         "review_report": [
           "docs/lai_global_1km_10daily_v2/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER1km-V2_I1.00.pdf"
         ]
       },
-      "file_count": 8,
+      "file_count": 6,
       "variable": "lai",
       "coverage": "global",
       "resolution": "1km",
@@ -656,7 +726,8 @@
       "id": "lai_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lai_global_300m_10daily_v1/CGLOPS1_ATBD_LAI300m-V1.1_I1.10.pdf"
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_ATBD_LAI300m-V1.1_I1.10.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pmm": [
           "docs/lai_global_300m_10daily_v1/CGLOPS1_PMM_LAI-FAPAR-FCOVER300m-V1.1_I1.20.pdf"
@@ -667,17 +738,21 @@
         ],
         "qar": [
           "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_LAI300-V1_I2.00.pdf",
-          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_LAI300m-V1.1_I1.20.pdf"
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_LAI300m-V1.1_I1.20.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
         ],
         "other": [
           "docs/lai_global_300m_10daily_v1/CGLOPS1_VR2024_LAI300m-V1.1_I1.00.pdf",
+          "docs/lai_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/lai_global_300m_10daily_v1/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
         ],
         "review_report": [
           "docs/lai_global_300m_10daily_v1/CGLOPS4_ReviewReport_LAI-FAPAR-FCOVER300m-V1.1_I1.00.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 14,
       "variable": "lai",
       "coverage": "global",
       "resolution": "300m",
@@ -690,19 +765,16 @@
       "id": "lai_global_300m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/lai_global_300m_10daily_v2/CGLOPS1_ATBD_LAI300m-V2.0_I1.00.pdf"
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_ATBD_LAI300m-V2.0_I1.10.pdf"
         ],
         "pum": [
-          "docs/lai_global_300m_10daily_v2/CGLOPS1_PUM_LAI300m-V2.0_I1.00.pdf"
-        ],
-        "qar": [
-          "docs/lai_global_300m_10daily_v2/CGLOPS1_QAR_LAI300-V1_I2.00.pdf"
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_PUM_LAI300m-V2.0_I1.20.pdf"
         ],
         "other": [
-          "docs/lai_global_300m_10daily_v2/ImagineS_RP2.1_ATBD-LAI300m_I1.73.pdf"
+          "docs/lai_global_300m_10daily_v2/CGLOPS1_VR_LAI300m-V2.0_I1.10.pdf"
         ]
       },
-      "file_count": 4,
+      "file_count": 3,
       "variable": "lai",
       "coverage": "global",
       "resolution": "300m",
@@ -769,6 +841,9 @@
     {
       "id": "lcm_global_10m_yearly_v1",
       "documents": {
+        "atbd": [
+          "docs/lcm_global_10m_yearly_v1/LCFM_ATBD_LCM-10_V1_I1.1.pdf"
+        ],
         "pum": [
           "docs/lcm_global_10m_yearly_v1/LCFM_PUM_LCM-10_V1_I1.1.pdf"
         ],
@@ -776,7 +851,7 @@
           "docs/lcm_global_10m_yearly_v1/LCFM_PVR_LCM-10_V1_I1.0.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 3,
       "variable": "lcm",
       "coverage": "global",
       "resolution": "10m",
@@ -789,29 +864,16 @@
       "id": "lie_baltic_250m_daily_v1",
       "documents": {
         "atbd": [
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf",
-          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-063-MAG_ATBD_ICE_2.6.pdf",
-          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-126-MAG_ATBD_ICE_S1_1.3.pdf"
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf"
         ],
         "pum": [
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf",
-          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-061-MAG_PUM_ICE_3.6.pdf"
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf"
         ],
         "qar": [
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
-          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf",
-          "docs/lie_baltic_250m_daily_v1/COSIMS-DT-071-MAG_QAR_ICE_V3.1.pdf"
+          "docs/lie_baltic_250m_daily_v1/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 3,
       "variable": "lie",
       "coverage": "baltic",
       "resolution": "250m",
@@ -840,25 +902,16 @@
       "id": "lie_europe_250m_daily_v2",
       "documents": {
         "atbd": [
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf"
         ],
         "pum": [
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf"
         ],
         "qar": [
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
-          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
+          "docs/lie_europe_250m_daily_v2/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 3,
       "variable": "lie",
       "coverage": "europe",
       "resolution": "250m",
@@ -874,25 +927,16 @@
           "docs/lie_global_500m_daily_v2/.gitkeep"
         ],
         "atbd": [
-          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
+          "docs/lie_global_500m_daily_v2/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf"
         ],
         "pum": [
-          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
+          "docs/lie_global_500m_daily_v2/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf"
         ],
         "qar": [
-          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
-          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
+          "docs/lie_global_500m_daily_v2/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf"
         ]
       },
-      "file_count": 13,
+      "file_count": 4,
       "variable": "lie",
       "coverage": "global",
       "resolution": "500m",
@@ -905,25 +949,16 @@
       "id": "lie_northernhemisphere_500m_daily_v1",
       "documents": {
         "atbd": [
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-Global-500m-V2.0_I1.1.pdf",
           "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_ATBD_LIE-NH-500m-V1.1_I1.3.pdf"
         ],
         "pum": [
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-250m-V1_I1.02.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-Global-500m-V2.0_I1.1.pdf",
           "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_PUM_LIE-NH_500m-V1.1_I1.3.pdf"
         ],
         "qar": [
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-250m-V1.0.1_I1.03.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-250m-V2.2.1_I1.03.pdf",
-          "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-Global-500m-V2.0.1_I1.1.pdf",
           "docs/lie_northernhemisphere_500m_daily_v1/CGLOPS2_QAR_LIE-NH-500m-V1.1_I1.3.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 3,
       "variable": "lie",
       "coverage": "northernhemisphere",
       "resolution": "500m",
@@ -958,14 +993,14 @@
       "id": "lsp_global_300m_yearly_v2",
       "documents": {
         "atbd": [
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_ATBD_BRDFCorrection300m-V1.6_I1.30.pdf",
           "docs/lsp_global_300m_yearly_v2/CGLOPS1_ATBD_LSP300m-V2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/lsp_global_300m_yearly_v2/CGLOPS1_PUM_LSP300m-V2.0_I1.00.pdf"
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_PUM_LSP300m-V2.0_I1.10.pdf"
         ],
         "other": [
-          "docs/lsp_global_300m_yearly_v2/CGLOPS1_VR_LSP300m-V2.0_I1.00.pdf",
-          "docs/lsp_global_300m_yearly_v2/CGLOPS1_VR_LSP300m_OLCI_I1.10.pdf"
+          "docs/lsp_global_300m_yearly_v2/CGLOPS1_VR_LSP300m-V2.0_I1.1.pdf"
         ]
       },
       "file_count": 4,
@@ -981,10 +1016,18 @@
       "id": "lst-daily-cycle_global_3km_10daily_v3",
       "documents": {
         "other": [
-          "docs/lst-daily-cycle_global_3km_10daily_v3/.gitkeep"
+          "docs/lst-daily-cycle_global_3km_10daily_v3/.gitkeep",
+          "docs/lst-daily-cycle_global_3km_10daily_v3/CGLOPS1_VR2025_LST_LST10-V3.0_I1.00.pdf",
+          "docs/lst-daily-cycle_global_3km_10daily_v3/CGLOPS1_VR_LST10-V3.0_I1.00.pdf"
+        ],
+        "atbd": [
+          "docs/lst-daily-cycle_global_3km_10daily_v3/CGLOPS1_ATBD_LST10-V3.0_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-daily-cycle_global_3km_10daily_v3/CGLOPS1_PUM_LST10-V3.0_I1.00.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 5,
       "variable": "lst-daily-cycle",
       "coverage": "global",
       "resolution": "3km",
@@ -997,29 +1040,16 @@
       "id": "lst-daily-cycle_global_5km_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
-        ],
-        "other": [
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_ATBD_LST10-V1.2_I1.60.pdf"
         ],
         "pum": [
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_PUM_LST10-V1.2_I1.50.pdf"
         ],
         "qar": [
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
-        ],
-        "review_report": [
-          "docs/lst-daily-cycle_global_5km_10daily_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v1/GIOGL1_QAR_LST10_I1.20.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 3,
       "variable": "lst-daily-cycle",
       "coverage": "global",
       "resolution": "5km",
@@ -1032,29 +1062,21 @@
       "id": "lst-daily-cycle_global_5km_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_ATBD_LST10-V2.2_I1.91.pdf"
         ],
         "other": [
           "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf"
         ],
         "pum": [
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_PUM_LST10-V2.2_I1.81.pdf"
         ],
         "qar": [
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst-daily-cycle_global_5km_10daily_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
-        ],
-        "review_report": [
-          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_QAR_LST-LST10-V2.1_I1.00.pdf",
+          "docs/lst-daily-cycle_global_5km_10daily_v2/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 6,
       "variable": "lst-daily-cycle",
       "coverage": "global",
       "resolution": "5km",
@@ -1067,10 +1089,18 @@
       "id": "lst-tci_global_3km_10daily_v3",
       "documents": {
         "other": [
-          "docs/lst-tci_global_3km_10daily_v3/.gitkeep"
+          "docs/lst-tci_global_3km_10daily_v3/.gitkeep",
+          "docs/lst-tci_global_3km_10daily_v3/CGLOPS1_VR2025_LST_LST10-V3.0_I1.00.pdf",
+          "docs/lst-tci_global_3km_10daily_v3/CGLOPS1_VR_LST10-V3.0_I1.00.pdf"
+        ],
+        "atbd": [
+          "docs/lst-tci_global_3km_10daily_v3/CGLOPS1_ATBD_LST10-V3.0_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/lst-tci_global_3km_10daily_v3/CGLOPS1_PUM_LST10-V3.0_I1.00.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 5,
       "variable": "lst-tci",
       "coverage": "global",
       "resolution": "3km",
@@ -1083,29 +1113,16 @@
       "id": "lst-tci_global_5km_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
-        ],
-        "other": [
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_ATBD_LST10-V1.2_I1.60.pdf"
         ],
         "pum": [
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_PUM_LST10-V1.2_I1.50.pdf"
         ],
         "qar": [
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
-        ],
-        "review_report": [
-          "docs/lst-tci_global_5km_10daily_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+          "docs/lst-tci_global_5km_10daily_v1/GIOGL1_QAR_LST10_I1.20.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 3,
       "variable": "lst-tci",
       "coverage": "global",
       "resolution": "5km",
@@ -1118,29 +1135,21 @@
       "id": "lst-tci_global_5km_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_ATBD_LST10-V2.2_I1.91.pdf"
         ],
         "other": [
           "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf"
         ],
         "pum": [
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_PUM_LST10-V2.2_I1.81.pdf"
         ],
         "qar": [
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst-tci_global_5km_10daily_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
-        ],
-        "review_report": [
-          "docs/lst-tci_global_5km_10daily_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_QAR_LST-LST10-V2.1_I1.00.pdf",
+          "docs/lst-tci_global_5km_10daily_v2/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf"
         ]
       },
-      "file_count": 12,
+      "file_count": 6,
       "variable": "lst-tci",
       "coverage": "global",
       "resolution": "5km",
@@ -1153,10 +1162,18 @@
       "id": "lst_global_3km_hourly_v3",
       "documents": {
         "other": [
-          "docs/lst_global_3km_hourly_v3/.gitkeep"
+          "docs/lst_global_3km_hourly_v3/.gitkeep",
+          "docs/lst_global_3km_hourly_v3/CGLOPS1_VR2025_LST_LST10-V3.0_I1.00.pdf",
+          "docs/lst_global_3km_hourly_v3/CGLOPS1_VR_LST-V3.0_I1.00.pdf"
+        ],
+        "atbd": [
+          "docs/lst_global_3km_hourly_v3/CGLOPS1_ATBD_LST-V3.0_I1.10.pdf"
+        ],
+        "pum": [
+          "docs/lst_global_3km_hourly_v3/CGLOPS1_PUM_LST-V3.0_I1.00.pdf"
         ]
       },
-      "file_count": 1,
+      "file_count": 5,
       "variable": "lst",
       "coverage": "global",
       "resolution": "3km",
@@ -1170,33 +1187,21 @@
       "documents": {
         "atbd": [
           "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_ATBD_LST10-V1.2_I1.60.pdf"
-        ],
-        "other": [
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v1/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst_global_5km_hourly_v1/GIOGL1_ATBD_CloudMask_I1.10.pdf"
         ],
         "pum": [
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST-V2.2_I2.24.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST10-V1.2_I1.50.pdf"
+          "docs/lst_global_5km_hourly_v1/CGLOPS1_PUM_LST-V1.2_I1.60.pdf"
         ],
         "qar": [
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v1/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf",
           "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
           "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf",
-          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST10_I1.20.pdf"
+          "docs/lst_global_5km_hourly_v1/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf"
         ],
-        "review_report": [
-          "docs/lst_global_5km_hourly_v1/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
+        "other": [
+          "docs/lst_global_5km_hourly_v1/GIOGL1_VR_LST_I2.10.pdf"
         ]
       },
-      "file_count": 17,
+      "file_count": 7,
       "variable": "lst",
       "coverage": "global",
       "resolution": "5km",
@@ -1209,35 +1214,24 @@
       "id": "lst_global_5km_hourly_v2",
       "documents": {
         "atbd": [
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST-V1.2_I1.41.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST10-V2.2_I1.91.pdf"
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_ATBD_LST-V2.2_I2.23.pdf"
         ],
         "other": [
           "docs/lst_global_5km_hourly_v2/CGLOPS1_PMM-Summary_LST-V2.1_20230224.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_VR2024_LST10-V2.1_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v2/GIOGL1_VR_LST_I2.10.pdf"
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_VR2024_LST-V2.1_I1.00.pdf"
         ],
         "pum": [
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST-V1.2_I1.60.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST10-V2.2_I1.81.pdf"
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_PUM_LST-V2.2_I2.24.pdf"
         ],
         "qar": [
           "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST-LST10-V2.1_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf",
-          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST10_V2.0_I1.00_0.pdf",
-          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-AlignResolution_I1.20.pdf",
-          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-HIMAWARI_I1.10.pdf",
-          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST-MTSAT2_I1.10_0.pdf",
-          "docs/lst_global_5km_hourly_v2/GIOGL1_QAR_LST10_I1.20.pdf"
+          "docs/lst_global_5km_hourly_v2/CGLOPS1_QAR_LST-V2.0_I1.00.pdf"
         ],
         "review_report": [
           "docs/lst_global_5km_hourly_v2/CGLOPS4_ReviewReport_LST-V2_I1.00.pdf"
         ]
       },
-      "file_count": 18,
+      "file_count": 7,
       "variable": "lst",
       "coverage": "global",
       "resolution": "5km",
@@ -1296,29 +1290,16 @@
       "id": "lwq-nrt_global_100m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf"
         ],
         "pum": [
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf"
         ],
         "qar": [
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 3,
       "variable": "lwq-nrt",
       "coverage": "global",
       "resolution": "100m",
@@ -1331,29 +1312,19 @@
       "id": "lwq-nrt_global_100m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
           "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
           "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.2.0_I1.00.pdf"
         ],
         "qar": [
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
           "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
-          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+          "docs/lwq-nrt_global_100m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v2.2.0_I1.00.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 6,
       "variable": "lwq-nrt",
       "coverage": "global",
       "resolution": "100m",
@@ -1398,29 +1369,16 @@
       "id": "lwq-nrt_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf"
         ],
         "pum": [
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf"
         ],
         "qar": [
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+          "docs/lwq-nrt_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 3,
       "variable": "lwq-nrt",
       "coverage": "global",
       "resolution": "300m",
@@ -1433,29 +1391,18 @@
       "id": "lwq-nrt_global_300m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
           "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
           "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
           "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
           "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
         ],
         "qar": [
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
           "docs/lwq-nrt_global_300m_10daily_v2/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 5,
       "variable": "lwq-nrt",
       "coverage": "global",
       "resolution": "300m",
@@ -1500,29 +1447,16 @@
       "id": "lwq-reproc_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.0.0_I1.03.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_v2.1.0_I1.00.pdf"
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_ATBD_LWQ300_1km_v1.3.1_I1.12.pdf"
         ],
         "pum": [
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v1.2.0_I1.03.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ100_S2_v2.1.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.0.0_I1.01.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_v2.1.0_I1.01.pdf"
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_PUM_LWQ300_1km_v1.3.1_I1.10.pdf"
         ],
         "qar": [
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v1.1.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ100_S2_v2.0.0_I1.02.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf",
-          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_v2.0.0_I1.01.pdf"
+          "docs/lwq-reproc_global_300m_10daily_v1/CGLOPS2_QAR_LWQ300_1km_v1.3.1_I1.11.pdf"
         ]
       },
-      "file_count": 16,
+      "file_count": 3,
       "variable": "lwq-reproc",
       "coverage": "global",
       "resolution": "300m",
@@ -1587,9 +1521,15 @@
         ],
         "pum": [
           "docs/ndvi-lts_global_1km_10daily_v3/CGLOPS1_PUM_LTS-STS_NDVI1km-V3_I1.30.pdf"
+        ],
+        "qar": [
+          "docs/ndvi-lts_global_1km_10daily_v3/CGLOPS1_QAR_NDVI1km-V3_I1.10.pdf"
+        ],
+        "review_report": [
+          "docs/ndvi-lts_global_1km_10daily_v3/CGLOPS4_ReviewReport_NDVI1km-V3_I1.00.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 4,
       "variable": "ndvi-lts",
       "coverage": "global",
       "resolution": "1km",
@@ -1606,9 +1546,15 @@
         ],
         "pum": [
           "docs/ndvi-sts_global_1km_10daily_v3/CGLOPS1_PUM_LTS-STS_NDVI1km-V3_I1.30.pdf"
+        ],
+        "qar": [
+          "docs/ndvi-sts_global_1km_10daily_v3/CGLOPS1_QAR_NDVI1km-V3_I1.10.pdf"
+        ],
+        "review_report": [
+          "docs/ndvi-sts_global_1km_10daily_v3/CGLOPS4_ReviewReport_NDVI1km-V3_I1.00.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 4,
       "variable": "ndvi-sts",
       "coverage": "global",
       "resolution": "1km",
@@ -1619,12 +1565,8 @@
     },
     {
       "id": "ndvi_global_1km_10daily_v2",
-      "documents": {
-        "qar": [
-          "docs/ndvi_global_1km_10daily_v2/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
-        ]
-      },
-      "file_count": 1,
+      "documents": {},
+      "file_count": 0,
       "variable": "ndvi",
       "coverage": "global",
       "resolution": "1km",
@@ -1643,14 +1585,13 @@
           "docs/ndvi_global_1km_10daily_v3/CGLOPS1_PUM_NDVI1km-V3_I1.10.pdf"
         ],
         "qar": [
-          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_QAR_NDVI1km-V3_I1.10.pdf",
-          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+          "docs/ndvi_global_1km_10daily_v3/CGLOPS1_QAR_NDVI1km-V3_I1.10.pdf"
         ],
         "review_report": [
           "docs/ndvi_global_1km_10daily_v3/CGLOPS4_ReviewReport_NDVI1km-V3_I1.00.pdf"
         ]
       },
-      "file_count": 5,
+      "file_count": 4,
       "variable": "ndvi",
       "coverage": "global",
       "resolution": "1km",
@@ -1662,10 +1603,6 @@
     {
       "id": "ndvi_global_300m_10daily_v1",
       "documents": {
-        "qar": [
-          "docs/ndvi_global_300m_10daily_v1/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf",
-          "docs/ndvi_global_300m_10daily_v1/GIOGL1_QAR_NDVI300m-V1_I1.10.pdf"
-        ],
         "other": [
           "docs/ndvi_global_300m_10daily_v1/CGLOPS1_SQE2019_NDV300m-V1_I1.01.pdf"
         ],
@@ -1674,9 +1611,12 @@
         ],
         "pum": [
           "docs/ndvi_global_300m_10daily_v1/GIOGL1_PUM_NDVI300m-V1_I1.11.pdf"
+        ],
+        "qar": [
+          "docs/ndvi_global_300m_10daily_v1/GIOGL1_QAR_NDVI300m-V1_I1.10.pdf"
         ]
       },
-      "file_count": 5,
+      "file_count": 4,
       "variable": "ndvi",
       "coverage": "global",
       "resolution": "300m",
@@ -1689,7 +1629,9 @@
       "id": "ndvi_global_300m_10daily_v2",
       "documents": {
         "atbd": [
-          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_ATBD_NDVI300m-V2_I1.20.pdf"
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_ATBD_BRDFCorrection300m-V1_I1.10.pdf",
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_ATBD_NDVI300m-V2_I1.20.pdf",
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_ATBD_S3-AC-V1_I1.30.pdf"
         ],
         "pmm": [
           "docs/ndvi_global_300m_10daily_v2/CGLOPS1_PMM_NDVI300m-V2_20230110.pdf"
@@ -1699,13 +1641,18 @@
         ],
         "qar": [
           "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_NDVI300m-V2_I1.62.pdf",
-          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_S3-AC_I1.20.pdf",
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_S3-CloudMask_I1.10.pdf",
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
+        "other": [
+          "docs/ndvi_global_300m_10daily_v2/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf"
         ],
         "review_report": [
           "docs/ndvi_global_300m_10daily_v2/CGLOPS4_ReviewReport_NDVI300m-V2_I1.00.pdf"
         ]
       },
-      "file_count": 6,
+      "file_count": 11,
       "variable": "ndvi",
       "coverage": "global",
       "resolution": "300m",
@@ -1718,16 +1665,17 @@
       "id": "ndvi_global_300m_10daily_v3",
       "documents": {
         "atbd": [
-          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_ATBD_NDVI300m-V3_I1.00.pdf"
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_ATBD_BRDFCorrection300m-V1.6_I1.30.pdf",
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_ATBD_NDVI300m-V3.0_I1.01.pdf"
         ],
         "pum": [
-          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_PUM_NDVI300m-V3_I1.00.pdf"
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_PUM_NDVI300m-V3.0_I1.02.pdf"
         ],
         "qar": [
-          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_QAR_NDVI300m_V3_I1.00.pdf"
+          "docs/ndvi_global_300m_10daily_v3/CGLOPS1_QAR_NDVI300m_V3_I1.10.pdf"
         ]
       },
-      "file_count": 3,
+      "file_count": 4,
       "variable": "ndvi",
       "coverage": "global",
       "resolution": "300m",
@@ -1745,11 +1693,15 @@
         "pum": [
           "docs/npp_global_300m_10daily_v1/CGLOPS1_PUM_DMP-NPP300m-V1.1_I1.30.pdf"
         ],
+        "qar": [
+          "docs/npp_global_300m_10daily_v1/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+        ],
         "other": [
+          "docs/npp_global_300m_10daily_v1/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
           "docs/npp_global_300m_10daily_v1/CGLOPS1_VR_DMP-NPP300m-V1.1_I1.70.pdf"
         ]
       },
-      "file_count": 3,
+      "file_count": 5,
       "variable": "npp",
       "coverage": "global",
       "resolution": "300m",
@@ -1765,10 +1717,13 @@
           "docs/npp_global_300m_10daily_v2/CGLOPS1_ATBD_NPP300m-V2.0_I1.00.pdf"
         ],
         "pum": [
-          "docs/npp_global_300m_10daily_v2/CGLOPS1_PUM_NPP300m-V2.0_I1.00.pdf"
+          "docs/npp_global_300m_10daily_v2/CGLOPS1_PUM_NPP300m-V2_I1.10.pdf"
+        ],
+        "other": [
+          "docs/npp_global_300m_10daily_v2/CGLOPS1_VR_DMP-NPP300m-V2_I1.10.pdf"
         ]
       },
-      "file_count": 2,
+      "file_count": 3,
       "variable": "npp",
       "coverage": "global",
       "resolution": "300m",
@@ -1781,22 +1736,16 @@
       "id": "sce_europe_500m_daily_v1",
       "documents": {
         "atbd": [
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
           "docs/sce_europe_500m_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
         ],
         "pum": [
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
           "docs/sce_europe_500m_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf"
         ],
         "qar": [
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
           "docs/sce_europe_500m_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 3,
       "variable": "sce",
       "coverage": "europe",
       "resolution": "500m",
@@ -1809,23 +1758,16 @@
       "id": "sce_global_1km_daily_v1",
       "documents": {
         "atbd": [
-          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
+          "docs/sce_global_1km_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf"
         ],
         "pum": [
-          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf",
-          "docs/sce_global_1km_daily_v1/COSIMS-DT-060-MAG_PUM_SNOW_3.6.pdf"
+          "docs/sce_global_1km_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf"
         ],
         "qar": [
-          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
-          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
+          "docs/sce_global_1km_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf"
         ]
       },
-      "file_count": 10,
+      "file_count": 3,
       "variable": "sce",
       "coverage": "global",
       "resolution": "1km",
@@ -1838,22 +1780,16 @@
       "id": "sce_northernhemisphere_1km_daily_v1",
       "documents": {
         "atbd": [
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE500-CEURO-500m-V1_I1.02.pdf"
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_ATBD_SCE-NHEMI-1km-V1_I1.04.pdf"
         ],
         "pum": [
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE500-CEURO-500m_V1_I1.02.pdf"
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_PUM_SCE-NHEMI-1km-V1_I1.05.pdf"
         ],
         "qar": [
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE-GLOBE-1km-V1_I1.00.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf",
-          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE500-CEURO-500m_V1_I1.02.pdf"
+          "docs/sce_northernhemisphere_1km_daily_v1/CGLOPS2_QAR_SCE-NHEMI-1km-V1_I1.04.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 3,
       "variable": "sce",
       "coverage": "northernhemisphere",
       "resolution": "1km",
@@ -1870,7 +1806,7 @@
         ],
         "other": [
           "docs/ssm_europe_1km_daily_v1/CGLOPS1_PMM-Summary_SSM1km-V1_I1.00.pdf",
-          "docs/ssm_europe_1km_daily_v1/CGLOPS1_VR2024_SSM1km-V1_I1.00.pdf",
+          "docs/ssm_europe_1km_daily_v1/CGLOPS1_VR2025_SSM1km-V1_I1.00.pdf",
           "docs/ssm_europe_1km_daily_v1/CGLOPS1_VR_SSM1km-V1_I1.20.pdf"
         ],
         "pum": [
@@ -1890,18 +1826,16 @@
       "id": "swe_northernhemisphere_5km_daily_v1",
       "documents": {
         "atbd": [
-          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_ATBD_SWE-NH-5km-V1_I1.01.pdf",
-          "docs/swe_northernhemisphere_5km_daily_v1/CLMS_ATBD_SWE-NH-5km-V2.01_update_v03.pdf"
+          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_ATBD_SWE-NH-5km-V1_I1.01.pdf"
         ],
         "pum": [
-          "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_PUM_SWE-HN-5km-V2.0.1_update_v03.pdf",
           "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_PUM_SWE-NH-5km-V1_I1.02.pdf"
         ],
         "qar": [
           "docs/swe_northernhemisphere_5km_daily_v1/CGLOPS2_QAR_SWE-NH-5km-V1_I1.01.pdf"
         ]
       },
-      "file_count": 5,
+      "file_count": 3,
       "variable": "swe",
       "coverage": "northernhemisphere",
       "resolution": "5km",
@@ -1913,19 +1847,14 @@
     {
       "id": "swe_northernhemisphere_5km_daily_v2",
       "documents": {
-        "atbd": [
-          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_ATBD_SWE-NH-5km-V1_I1.01.pdf",
-          "docs/swe_northernhemisphere_5km_daily_v2/CLMS_ATBD_SWE-NH-5km-V2.01_update_v03.pdf"
-        ],
         "pum": [
-          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_PUM_SWE-HN-5km-V2.0.1_update_v03.pdf",
-          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_PUM_SWE-NH-5km-V1_I1.02.pdf"
+          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_PUM_SWE-HN-5km-V2.0.1_update_v03.pdf"
         ],
-        "qar": [
-          "docs/swe_northernhemisphere_5km_daily_v2/CGLOPS2_QAR_SWE-NH-5km-V1_I1.01.pdf"
+        "atbd": [
+          "docs/swe_northernhemisphere_5km_daily_v2/CLMS_ATBD_SWE-NH-5km-V2.01_update_v03.pdf"
         ]
       },
-      "file_count": 5,
+      "file_count": 2,
       "variable": "swe",
       "coverage": "northernhemisphere",
       "resolution": "5km",
@@ -1994,7 +1923,7 @@
         ],
         "other": [
           "docs/swi_europe_1km_daily_v1/CGLOPS1_PMM-Summary_SWI1km-V1_I1.00.pdf",
-          "docs/swi_europe_1km_daily_v1/CGLOPS1_VR2024_SWI1km_V1_I1.00.pdf"
+          "docs/swi_europe_1km_daily_v1/CGLOPS1_VR2025_SWI1km_V1_I1.00.pdf"
         ],
         "pum": [
           "docs/swi_europe_1km_daily_v1/CGLOPS1_PUM_SWI1km_I1.50.pdf"
@@ -2022,7 +1951,7 @@
           "docs/swi_europe_1km_daily_v2/CGLOPS1_PUM_SWI1km_I1.50.pdf"
         ],
         "other": [
-          "docs/swi_europe_1km_daily_v2/CGLOPS1_VR2024_SWI1km_V1_I1.00.pdf"
+          "docs/swi_europe_1km_daily_v2/CGLOPS1_VR2025_SWI1km_V2_I1.00.pdf"
         ]
       },
       "file_count": 3,
@@ -2067,10 +1996,10 @@
           "docs/swi_global_12.5km_10daily_v4/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
         ],
         "pum": [
-          "docs/swi_global_12.5km_10daily_v4/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+          "docs/swi_global_12.5km_10daily_v4/CGLOPS1_PUM_SWI0.1-V4_I3.00.pdf"
         ],
-        "qar": [
-          "docs/swi_global_12.5km_10daily_v4/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        "other": [
+          "docs/swi_global_12.5km_10daily_v4/CGLOPS1_VR_SWI0.1-V4_I1.00.pdf"
         ]
       },
       "file_count": 3,
@@ -2115,10 +2044,10 @@
           "docs/swi_global_12.5km_daily_v4/CGLOPS1_ATBD_SWI0.1_I1.40.pdf"
         ],
         "pum": [
-          "docs/swi_global_12.5km_daily_v4/CGLOPS1_PUM_SWI0.1_I2.70.pdf"
+          "docs/swi_global_12.5km_daily_v4/CGLOPS1_PUM_SWI0.1-V4_I3.00.pdf"
         ],
-        "qar": [
-          "docs/swi_global_12.5km_daily_v4/GIOGL1_QAR_SWIV3-SWI10_I1.10.pdf"
+        "other": [
+          "docs/swi_global_12.5km_daily_v4/CGLOPS1_VR_SWI0.1-V4_I1.00.pdf"
         ]
       },
       "file_count": 3,
@@ -2156,18 +2085,21 @@
     {
       "id": "toc_global_300m_daily_v2",
       "documents": {
+        "atbd": [
+          "docs/toc_global_300m_daily_v2/CGLOPS1_ATBD_S3-AC-V1.1_I1.50.pdf"
+        ],
         "pum": [
-          "docs/toc_global_300m_daily_v2/CGLOPS1_PUM_S3-TOC-Reflectance300m-V2.3_I1.10.pdf"
+          "docs/toc_global_300m_daily_v2/CGLOPS1_PUM_S3-TOC-Reflectance300m-V2.3_I1.30.pdf"
         ],
         "qar": [
-          "docs/toc_global_300m_daily_v2/CGLOPS1_QAR_S3-TOCr300m-v1_I1.30.pdf"
+          "docs/toc_global_300m_daily_v2/CGLOPS1_QAR_S3-AC-V1.1_I1.40.pdf",
+          "docs/toc_global_300m_daily_v2/CGLOPS1_QAR_S3-CloudMask_I2.00.pdf"
         ],
         "other": [
-          "docs/toc_global_300m_daily_v2/CGLOPS1_VR2024_TOCr300m-V1_I1.00.pdf",
-          "docs/toc_global_300m_daily_v2/CGLOPS1_VR_S3-TOC-Reflectance300m-V2.3_I1.00.pdf"
+          "docs/toc_global_300m_daily_v2/CGLOPS1_VR_S3-TOC-Reflectance300m-V2.3_I1.10.pdf"
         ]
       },
-      "file_count": 4,
+      "file_count": 5,
       "variable": "toc",
       "coverage": "global",
       "resolution": "300m",
@@ -2180,20 +2112,16 @@
       "id": "wb_global_100m_monthly_v1",
       "documents": {
         "atbd": [
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf"
         ],
         "pum": [
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
-          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
+          "docs/wb_global_100m_monthly_v1/CGLOPS2_PUM_WB100m_V1_I1.10.pdf"
         ],
         "qar": [
           "docs/wb_global_100m_monthly_v1/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
         ]
       },
-      "file_count": 7,
+      "file_count": 3,
       "variable": "wb",
       "coverage": "global",
       "resolution": "100m",
@@ -2204,22 +2132,8 @@
     },
     {
       "id": "wb_global_1km_10daily_v2",
-      "documents": {
-        "atbd": [
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
-        ],
-        "pum": [
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
-        ],
-        "qar": [
-          "docs/wb_global_1km_10daily_v2/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
-        ]
-      },
-      "file_count": 7,
+      "documents": {},
+      "file_count": 0,
       "variable": "wb",
       "coverage": "global",
       "resolution": "1km",
@@ -2232,24 +2146,16 @@
       "id": "wb_global_300m_10daily_v1",
       "documents": {
         "atbd": [
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf"
         ],
         "pum": [
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V1_I1.20.txt",
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
-        ],
-        "qar": [
-          "docs/wb_global_300m_10daily_v1/CGLOPS2_QAR_WB100m_V1_l1.00.pdf"
+          "docs/wb_global_300m_10daily_v1/CGLOPS2_PUM_WB300m_V1_I1.20.pdf"
         ],
         "other": [
           "docs/wb_global_300m_10daily_v1/CGLOPS2_VR_WB300m-V1_I1.10.pdf"
         ]
       },
-      "file_count": 9,
+      "file_count": 3,
       "variable": "wb",
       "coverage": "global",
       "resolution": "300m",
@@ -2262,21 +2168,16 @@
       "id": "wb_global_300m_monthly_v2",
       "documents": {
         "atbd": [
-          "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB100m_V1_I1.00.pdf",
-          "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB300m_V1_I1.10.pdf",
           "docs/wb_global_300m_monthly_v2/CGLOPS2_ATBD_WB300m_V2_I1.00.pdf"
         ],
         "pum": [
-          "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB100m_V1_I1.10.pdf",
-          "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB300m_V1_I1.20.pdf",
           "docs/wb_global_300m_monthly_v2/CGLOPS2_PUM_WB300m_V2_I1.10.pdf"
         ],
         "qar": [
-          "docs/wb_global_300m_monthly_v2/CGLOPS2_QAR_WB100m_V1_l1.00.pdf",
           "docs/wb_global_300m_monthly_v2/CGLOPS2_QAR_WB300m-V2_I1.00.pdf"
         ]
       },
-      "file_count": 8,
+      "file_count": 3,
       "variable": "wb",
       "coverage": "global",
       "resolution": "300m",
@@ -2292,13 +2193,11 @@
           "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_ATBD_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
         ],
         "pum": [
-          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf"
+          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf",
+          "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.15.pdf"
         ],
         "qar": [
           "docs/wl-lakes_global_vector_daily_v2/CGLOPS2_QAR_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
-        ],
-        "other": [
-          "docs/wl-lakes_global_vector_daily_v2/COSIMS-DT-230-MAG_ARLIE_usage_1.1.pdf"
         ]
       },
       "file_count": 4,
@@ -2317,13 +2216,11 @@
           "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_ATBD_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
         ],
         "pum": [
-          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf"
+          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.14.pdf",
+          "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_PUM_LakeAndRiverWaterLevel-V2.2_I2.15.pdf"
         ],
         "qar": [
           "docs/wl-rivers_global_vector_daily_v2/CGLOPS2_QAR_LakeAndRiverWaterLevel-V2.2_I2.13.pdf"
-        ],
-        "other": [
-          "docs/wl-rivers_global_vector_daily_v2/COSIMS-DT-230-MAG_ARLIE_usage_1.1.pdf"
         ]
       },
       "file_count": 4,
